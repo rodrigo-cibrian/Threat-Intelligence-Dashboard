@@ -1,0 +1,2189 @@
+id,indicator,type,title,description,content
+3012,cyberwise.biz,domain,,,
+3013,biketools.ru,domain,,,
+3014,verified-deal.com,domain,,,
+3015,wordpress-catalog.com,domain,,,
+3016,kitchentools.ru,domain,,,
+3017,cyclingtools.ru,domain,,,
+3018,wordpress-catalog.com/something/login.php?p=Rome0,URL,,,
+3019,https://cyclingtools.ru/phpbb/showtopic.php,URL,,,
+3020,https://blog.wordpress-catalog.com/,URL,,,
+3021,https://verified-deal.com/register/register.php,URL,,,
+3022,https://cyberwise.biz/register/register.php,URL,,,
+3023,https://biketools.ru/phpbb/showtopic.php,URL,,,
+3024,http://143biz.cc.md-14.webhostbox.net/accounts.wordpress-catalog.com,URL,,,
+3025,https://kitchentools.ru/phpbb/showtopic.php,URL,,,
+3026,http://143biz.cc.md-14.webhostbox.net,URL,,,
+3027,http://143biz.cc.md-14.webhostbox.net/something/login.php?p=Rome0,URL,,,
+3029,143biz.cc.md-14.webhostbox.net,hostname,,,
+3030,blog.wordpress-catalog.com,hostname,,,
+3031,8b5436ca6e520d6942087bb38e97da65,FileHash-MD5,,,
+3032,0fb00a8ad217abe9d92a1faa397842dc,FileHash-MD5,,,
+3033,9223e3472e8ff9ddfa0d0dbad573d530,FileHash-MD5,,,
+3034,f9cbd1c3c48c873f3bff8c957ae280c7,FileHash-MD5,,,
+3035,5843ae35bdeb4ca577054936c5c3944e,FileHash-MD5,,,
+3036,7a5580ddf2eb2fc4f4a0ea28c40f0da9,FileHash-MD5,,,
+3037,01d12f4f2f0d3019756d83e94e3b564b,FileHash-MD5,,,
+3038,028c9a1619f96dbfd29ca64199f4acde,FileHash-MD5,,,
+30630038,fed654cc7c3eea5d4c96ce48d7f1aaffb00e8a49,YARA,BackoffROM,,"rule BackoffROM    
+   {   
+   	meta:   
+   		author = ""Alienvault Labs""   
+   		reference = ""http://blog.fortinet.com/post/rom-a-new-version-of-the-backoff-pos-malware""   
+   	strings:   
+   		$mz = {4d 5a}   
+   		$mutex = ""aMD6qt7lWb1N3TNBSe4N""   
+   		$httpparam1 = ""data=%s""   
+   		$httpparam2 = ""oprat=%d""   
+   		$httpparam3 = ""uid=%s""   
+   		$httpparam4 = ""uinfo=%s""   
+   		$httpparam5 = ""win=%d""   
+   		$httpparam6 = ""grup=%s""   
+   		$httpparam7 = ""vers=%s""   
+   	condition:   
+   		($mz at 0) and ($mutex or all of ($httpparam*))   
+   }"
+30630039,bcb652cc6552b949631ed0fd2654b522c6635d45,YARA,BackoffROMHashes,,"rule BackoffROMHashes   
+   {   
+   	meta:   
+   		author = ""Alienvault Labs""   
+   		reference_hash = ""35fb5c75a5b472eb2c6fd059ca136a9e,01dd913425f36e56e42fec6f96282a3d""   
+   		reference = ""http://blog.fortinet.com/post/rom-a-new-version-of-the-backoff-pos-malware""   
+   	strings:   
+   		$mz = {4d 5a}   
+   		$func1 = {56 57 8B F9 33 F6 8B D6 85 FF ?? ?? 33 C0 ?? ?? 0F B7 0F 8B C6 66 85 C9 ?? ?? 66 83 F9 2E 0F 44 D0 40 0F B7 0C 47 66 85 C9 ?? ?? 85 D2 ?? ?? 8B D0 53 8B DE 85 D2 ?? ?? 8A 04 5F 0C 20 0F BE C8 03 F1 C1 E1 07 33 F1 43 3B DA}   
+   		$func2 = {7E 7C 00 00 73 37 00 00 68 07 00 00 0A 31 00 00 C6 0C 00 00 2E 35 00 00 02 31 00 00 1A 34 00 00 88 03 00 00 1B 4F 00 00 2C 27 00 00 FB 0E 00 00 25 01 00 00 ED 0C 00 00 64 03 00 00 26 3F 00 00 16 36 00 00 1B 0B 00 00 34 34 00 00 84 08 00 00 07 0A 00 00 9A 0B 00 00 FD 72 00 00 7D 3D 00 00 F1 07 00 00 85 3F 00 00 99 2B 00 00 24 3C 00 00 55 6C 7B 6F 2F 29 00 00 6E 75 79 68 6E 4A 6D 6B 75 54 67 44 00 00 00 00 66 4F 68 4A 63 41 51 6B 36 4F 00 00}   
+   	condition:   
+   		($mz at 0) and (any of ($func*))   
+   }"
+3028,143.biz.cc.md-14.webhostbox.net,hostname,,,
+1,src.sandcastlesmagazine.com,hostname,,,
+2,img.lakeforestparkhome.info,hostname,,,
+3,cdn.jameswoodwardmusic.com,hostname,,,
+4,cdn2.movetoclarksville.com,hostname,,,
+5,cdn.movetoclarksville.com,hostname,,,
+6,img.greenwoodhouse.info,hostname,,,
+7,yimg.1stdayofwinter.com,hostname,,,
+8,yimg.1208nw199thpl.info,hostname,,,
+9,src.sheffieldwoods.org,hostname,,,
+10,img.kirklandhouse.info,hostname,,,
+11,img.broadviewhome.info,hostname,,,
+31,lowbalance.su,domain,,,
+32,brokenpiano.ru,domain,,,
+33,everydaypp.ru,domain,,,
+34,oldfirefox.su,domain,,,
+35,irishjuice.su,domain,,,
+36,nitmurmansk.su,domain,,,
+37,d38a9b4d0c17c954080b86bb79a25272,FileHash-MD5,,,
+38,54b5c261ecbd63118f1a135cb4f091d6,FileHash-MD5,,,
+39,44994d7d75e6c6f215d239bba5d8f411,FileHash-MD5,,,
+40,7166665cf5d69422fb710009161faf64,FileHash-MD5,,,
+41,198.154.224.48,IPv4,Expired,,
+42,162.213.250.124,IPv4,Expired,,
+43,178.18.18.30,IPv4,Expired,,
+44,194.38.104.218,IPv4,Expired,,
+45,173.255.241.19,IPv4,Expired,,
+47,178.207.18.188,IPv4,Expired,,
+48,174.127.103.45,IPv4,Expired,,
+49,61.90.197.150,IPv4,Expired,,
+50,198.58.102.172,IPv4,Expired,,
+51,27.254.40.105,IPv4,Expired,,
+52,162.248.167.184,IPv4,Expired,,
+53,69.164.221.7,IPv4,Expired,,
+54,65.254.49.118,IPv4,Expired,,
+55,203.151.23.69,IPv4,Expired,,
+56,65.254.49.116,IPv4,Expired,,
+57,166.78.145.146,IPv4,Expired,,
+58,122.155.167.122,IPv4,Expired,,
+59,70.32.85.69,IPv4,Expired,,
+61,212.81.134.57,IPv4,Expired,,
+62,46.28.68.144,IPv4,Expired,,
+63,178.21.117.34,IPv4,Expired,,
+64,70.32.94.46,IPv4,Expired,,
+65,74.117.158.3,IPv4,Expired,,
+66,198.154.216.149,IPv4,Expired,,
+67,209.160.65.96,IPv4,Expired,,
+68,securitywap.com,domain,,,
+69,walterclean.com,domain,,,
+70,lamb-site.com,domain,,,
+71,playboysplus.com,domain,,,
+72,bedircati.com,domain,,,
+73,http://www.playboysplus.com,URL,,,
+74,http://join.playboysplus.com/signup/,URL,,,
+75,join.playboysplus.com,hostname,,,
+76,inform.bedircati.com,hostname,,,
+77,www.securitywap.com,hostname,,,
+78,www.walterclean.com,hostname,,,
+79,pn.lamb-site.com,hostname,,,
+80,f34d5f2d4577ed6d9ceec516c1f5a744,FileHash-MD5,,,
+81,492a839a3bf9c61b7065589a18c5aa8d,FileHash-MD5,,,
+82,5a0c4e1925c76a959ab0588f683ab437,FileHash-MD5,,,
+83,6b8611f8148a6b51e37fd68e75b6a81c,FileHash-MD5,,,
+84,9342d18e7d315117f23db7553d59a9d1,FileHash-MD5,,,
+85,5c08957f05377004376e6a622406f9aa,FileHash-MD5,,,
+86,2fab77a3ff40e4f6d9b5b7e813c618e4,FileHash-MD5,,,
+87,8849538ef1c3471640230605c2623c67,FileHash-MD5,,,
+88,744a17a3bc6dbd535f568ef1e87d8b9a,FileHash-MD5,,,
+89,192.157.198.103,IPv4,Expired,,
+90,192.184.60.229,IPv4,Expired,,
+91,104.151.248.173,IPv4,Expired,,
+92,210.109.99.64,IPv4,Expired,,
+93,198.55.115.71,IPv4,Expired,,
+94,CVE-2014-4113,CVE,,,
+95,CVE-2014-6332,CVE,,,
+96,ba7bb65634ce1e30c1e5415be3d1db1d,FileHash-MD5,,,
+97,1c024e599ac055312a4ab75b3950040a,FileHash-MD5,,,
+98,e63422e458afdfe111bd0b87c1e9772c,FileHash-MD5,,,
+99,c053a0a3f1edcbbfc9b51bc640e808ce,FileHash-MD5,,,
+100,47d0e8f9d7a6429920329207a32ecc2e,FileHash-MD5,,,
+101,4b6b86c7fec1c574706cecedf44abded,FileHash-MD5,,,
+102,b9e4f9d32ce59e7c4daf6b237c330e25,FileHash-MD5,,,
+103,885dcd517faf9fac655b8da66315462d,FileHash-MD5,,,
+104,b505d65721bb2453d5039a389113b566,FileHash-MD5,,,
+105,de3547375fbf5f4cb4b14d53f413c503,FileHash-MD5,,,
+106,db405ad775ac887a337b02ea8b07fddc,FileHash-MD5,,,
+107,a1d727340158ec0af81a845abd3963c1,FileHash-MD5,,,
+108,06665b96e293b23acc80451abb413e50,FileHash-MD5,,,
+109,18d4898d82fcb290dfed2a9f70d66833,FileHash-MD5,,,
+110,b269894f434657db2b15949641a67532,FileHash-MD5,,,
+111,d240f06e98c8d3e647cbf4d442d79475,FileHash-MD5,,,
+112,bfbe8c3ee78750c3a520480700e440f8,FileHash-MD5,,,
+113,1e4076caa08e41a5befc52efd74819ea,FileHash-MD5,,,
+114,ffb0b9b5b610191051a7bdf0806e1e47,FileHash-MD5,,,
+115,68297fde98e9c0c29cecc0ebf38bde95,FileHash-MD5,,,
+116,bddf5afbea2d0eed77f2ad4e9a4f044d,FileHash-MD5,,,
+117,da03648948475b2d0e3e2345d7a9bbbb,FileHash-MD5,,,
+118,d446b1ed24dad48311f287f3c65aeb80,FileHash-MD5,,,
+119,01c2f321b6bfdb9473c079b0797567ba,FileHash-MD5,,,
+120,8486ec3112e322f9f468bdea3005d7b5,FileHash-MD5,,,
+121,2c8b9d2885543d7ade3cae98225e263b,FileHash-MD5,,,
+122,187044596bc1328efa0ed636d8aa4a5c,FileHash-MD5,,,
+123,744c07e886497f7b68f6f7fe57b7ab54,FileHash-MD5,,,
+124,6662c390b2bbbd291ec7987388fc75d7,FileHash-MD5,,,
+125,6cf5dc32e1f6959e7354e85101ec219a,FileHash-MD5,,,
+126,b29ca4f22ae7b7b25f79c1d4a421139d,FileHash-MD5,,,
+127,26297dc3cd0b688de3b846983c5385e5,FileHash-MD5,,,
+128,202.71.144.113,IPv4,Expired,,
+129,203.199.89.80,IPv4,Expired,,
+130,61.67.114.73,IPv4,Expired,,
+131,194.183.237.145,IPv4,Expired,,
+30345880,faf4eb87e9e4ecb2a924ce3aa31f486995fe01da,YARA,,,"rule Regin_Sample_1    
+   {   
+      
+       meta:   
+           description = ""Auto-generated rule - file-3665415_sys""   
+           author = ""@MalwrSignatures""   
+           date = ""26.11.14""   
+           hash = ""773d7fab06807b5b1bc2d74fa80343e83593caf2""   
+      
+       strings:   
+           $s0 = ""Getting PortName/Identifier failed - %x"" fullword ascii   
+           $s1 = ""SerialAddDevice - error creating new devobj [%#08lx]"" fullword ascii   
+           $s2 = ""External Naming Failed - Status %x"" fullword ascii   
+           $s3 = ""------- Same multiport - different interrupts"" fullword ascii   
+           $s4 = ""%x occurred prior to the wait - starting the"" fullword ascii   
+           $s5 = ""'user registry info - userPortIndex: %d"" fullword ascii   
+           $s6 = ""Could not report legacy device - %x"" fullword ascii   
+           $s7 = ""entering SerialGetPortInfo"" fullword ascii   
+           $s8 = ""'user registry info - userPort: %x"" fullword ascii   
+           $s9 = ""IoOpenDeviceRegistryKey failed - %x "" fullword ascii   
+           $s10 = ""Kernel debugger is using port at address %X"" fullword ascii   
+           $s12 = ""Release - freeing multi context"" fullword ascii   
+           $s13 = ""Serial driver will not load port"" fullword ascii   
+           $s14 = ""'user registry info - userAddressSpace: %d"" fullword ascii   
+           $s15 = ""SerialAddDevice: Enumeration request, returning NO_MORE_ENTRIES"" fullword ascii   
+           $s20 = ""'user registry info - userIndexed: %d"" fullword ascii   
+      
+       condition:   
+           all of them and filesize < 110KB and filesize > 80KB   
+   }"
+30345881,56cf5ea6f79923b021acdae40bd4eeb80df9d8c2,YARA,,,"rule Regin_APT_KernelDriver_Generic_B    
+   {   
+      
+       meta:   
+           description = ""Generic rule for Regin APT kernel driver Malware - Symantec http://t.co/qu53359Cb2""   
+           author = ""@Malwrsignatures - included in APT Scanner THOR""   
+           date = ""23.11.14""   
+           hash1 = ""ffb0b9b5b610191051a7bdf0806e1e47""   
+           hash2 = ""bfbe8c3ee78750c3a520480700e440f8""   
+           hash3 = ""b29ca4f22ae7b7b25f79c1d4a421139d""   
+           hash4 = ""06665b96e293b23acc80451abb413e50""   
+           hash5 = ""2c8b9d2885543d7ade3cae98225e263b""   
+           hash6 = ""4b6b86c7fec1c574706cecedf44abded""   
+           hash7 = ""187044596bc1328efa0ed636d8aa4a5c""   
+           hash8 = ""d240f06e98c8d3e647cbf4d442d79475""   
+           hash9 = ""6662c390b2bbbd291ec7987388fc75d7""   
+           hash10 = ""1c024e599ac055312a4ab75b3950040a""   
+           hash11 = ""ba7bb65634ce1e30c1e5415be3d1db1d""   
+           hash12 = ""b505d65721bb2453d5039a389113b566""   
+           hash13 = ""b269894f434657db2b15949641a67532""   
+      
+       strings:   
+           $m0 = { 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 b8 }    
+           $s1 = { 0e 1f ba 0e 00 b4 09 cd 21 b8 01 4c cd 21 54 68 69 73 20 70 72 6f 67 72 61 6d 20 63 61 6e 6e 6f 74 20 62 65 20 72 75 6e 20 69 6e 20 44 4f 53 20 6d 6f 64 65 2e }   
+           $s2 = ""H.data"" fullword ascii nocase   
+           $s3 = ""INIT"" fullword ascii   
+           $s4 = ""ntoskrnl.exe"" fullword ascii   
+           $v1 = ""\\system32"" fullword ascii   
+           $v2 = ""\\SystemRoot"" fullword ascii   
+           $v3 = ""KeServiceDescriptorTable"" fullword ascii    
+           $w1 = ""\\system32"" fullword ascii   
+           $w2 = ""\\SystemRoot"" fullword ascii        
+           $w3 = ""LRich6"" fullword ascii           
+           $x1 = ""_snprintf"" fullword ascii   
+           $x2 = ""_except_handler3"" fullword ascii   
+           $y1 = ""mbstowcs"" fullword ascii   
+           $y2 = ""wcstombs"" fullword ascii   
+           $y3 = ""KeGetCurrentIrql"" fullword ascii   
+           $z1 = ""wcscpy"" fullword ascii   
+           $z2 = ""ZwCreateFile"" fullword ascii   
+           $z3 = ""ZwQueryInformationFile"" fullword ascii   
+           $z4 = ""wcslen"" fullword ascii   
+           $z5 = ""atoi"" fullword ascii   
+         
+       condition:   
+           $m0 at 0 and all of ($s*) and ( all of ($v*) or all of ($w*) or all of ($x*) or all of ($y*) or all of ($z*) ) and filesize < 20KB   
+   }"
+30345882,314650529c9fbde8d9c215054ff2d02fa8b6d35a,YARA,,,"rule apt_regin_hopscotch    
+   {   
+      
+       meta:   
+           copyright = ""Kaspersky Lab""   
+           description = ""Rule to detect Regin's Hopscotch module""   
+           version = ""1.0""   
+           last_modified = ""2015-01-22""   
+           reference = ""https://securelist.com/blog/research/68438/an-analysis-of-regins-hopscotch-and-legspin/""   
+           md5 = ""6c34031d7a5fc2b091b623981a8ae61c""   
+      
+       strings:   
+           $mz=""MZ""   
+           $a1=""AuthenticateNetUseIpc""   
+           $a2=""Failed to authenticate to""   
+           $a3=""Failed to disconnect from""   
+           $a4=""%S\\ipc$"" wide   
+           $a5=""Not deleting...""   
+           $a6=""CopyServiceToRemoteMachine""   
+           $a7=""DH Exchange failed""   
+           $a8=""ConnectToNamedPipes""   
+        
+       condition:   
+           ($mz at 0) and all of ($a*)   
+   }"
+30345883,990a4596724ed6939af90d209c20ead40d7c91a7,YARA,,,"rule apt_regin_dispatcher_disp_dll    
+   {   
+      
+       meta:   
+           copyright = ""Kaspersky Lab""   
+           author = ""Kaspersky Lab""   
+           description = ""Rule to detect Regin disp.dll dispatcher""   
+           version = ""1.0""   
+           last_modified = ""2014-11-18""   
+      
+       strings:   
+           $mz=""MZ""   
+           $string1=""shit""   
+           $string2=""disp.dll""   
+           $string3=""255.255.255.255""   
+           $string4=""StackWalk64""   
+           $string5=""imagehlp.dll""   
+          
+       condition:   
+           ($mz at 0) and (all of ($string*))   
+   }"
+30345884,883499249de4259a30453113a09dbd0b7ffd63c8,YARA,,,"rule Regin_APT_KernelDriver_Generic_A    
+   {   
+      
+       meta:   
+           description = ""Generic rule for Regin APT kernel driver Malware - Symantec http://t.co/qu53359Cb2""   
+           author = ""@Malwrsignatures - included in APT Scanner THOR""   
+           date = ""23.11.14""   
+           hash1 = ""187044596bc1328efa0ed636d8aa4a5c""   
+           hash2 = ""06665b96e293b23acc80451abb413e50""   
+           hash3 = ""d240f06e98c8d3e647cbf4d442d79475""   
+      
+       strings:   
+           $m0 = { 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 b8 }    
+           $m1 = { 0e 1f ba 0e 00 b4 09 cd 21 b8 01 4c cd 21 54 68 69 73 20 70 72 6f 67 72 61 6d 20 63 61 6e 6e 6f 74 20 62 65 20 72 75 6e 20 69 6e 20 44 4f 53 20 6d 6f 64 65 2e }       
+           $s0 = ""atapi.sys"" fullword wide   
+           $s1 = ""disk.sys"" fullword wide   
+           $s3 = ""h.data"" fullword ascii   
+           $s4 = ""\\system32"" fullword ascii   
+           $s5 = ""\\SystemRoot"" fullword ascii   
+           $s6 = ""system"" fullword ascii   
+           $s7 = ""temp"" fullword ascii   
+           $s8 = ""windows"" fullword ascii   
+           $x1 = ""LRich6"" fullword ascii   
+           $x2 = ""KeServiceDescriptorTable"" fullword ascii        
+          
+       condition:   
+           $m0 at 0 and $m1 and all of ($s*) and 1 of ($x*)   
+   }"
+30345885,302760187ee77952c6f14f1e98f9bfdf8948adc6,YARA,,,"rule Regin_Sample_Set_1    
+   {   
+      
+       meta:   
+           description = ""Auto-generated rule - file SHF-000052 and ndisips.sys""   
+           author = ""@MalwrSignatures""   
+           date = ""26.11.14""   
+           hash1 = ""8487a961c8244004c9276979bb4b0c14392fc3b8""   
+           hash2 = ""bcf3461d67b39a427c83f9e39b9833cfec977c61""         
+      
+       strings:   
+           $s0 = ""HAL.dll"" fullword ascii   
+           $s1 = ""IoGetDeviceObjectPointer"" fullword ascii   
+           $s2 = ""MaximumPortsServiced"" fullword wide   
+           $s3 = ""KeGetCurrentIrql"" fullword ascii   
+           $s4 = ""ntkrnlpa.exe"" fullword ascii   
+           $s5 = ""\\REGISTRY\\Machine\\System\\CurrentControlSet\\Control\\Session Manager"" wide   
+           $s6 = ""ConnectMultiplePorts"" fullword wide   
+           $s7 = ""\\SYSTEMROOT"" fullword wide   
+           $s8 = ""IoWriteErrorLogEntry"" fullword ascii   
+           $s9 = ""KeQueryPerformanceCounter"" fullword ascii   
+           $s10 = ""KeServiceDescriptorTable"" fullword ascii   
+           $s11 = ""KeRemoveEntryDeviceQueue"" fullword ascii   
+           $s12 = ""SeSinglePrivilegeCheck"" fullword ascii   
+           $s13 = ""KeInitializeEvent"" fullword ascii   
+           $s14 = ""IoBuildDeviceIoControlRequest"" fullword ascii   
+           $s15 = ""KeRemoveDeviceQueue"" fullword ascii   
+           $s16 = ""IofCompleteRequest"" fullword ascii   
+           $s17 = ""KeInitializeSpinLock"" fullword ascii   
+           $s18 = ""MmIsNonPagedSystemAddressValid"" fullword ascii   
+           $s19 = ""IoCreateDevice"" fullword ascii   
+           $s20 = ""KefReleaseSpinLockFromDpcLevel"" fullword ascii   
+         
+       condition:   
+           all of them and filesize < 40KB and filesize > 30KB   
+   }"
+30345886,db3319416a238aafe28fb3ac1a7028df7b08ff93,YARA,,,"rule Regin_Sample_3    
+   {   
+      
+       meta:   
+           description = ""Detects Regin Backdoor sample fe1419e9dde6d479bd7cda27edd39fafdab2668d498931931a2769b370727129""   
+           author = ""@Malwrsignatures""   
+           date = ""27.11.14""   
+           hash = ""fe1419e9dde6d479bd7cda27edd39fafdab2668d498931931a2769b370727129""          
+         
+       strings:   
+           $hd = { fe ba dc fe }   
+           $s0 = ""Service Pack x"" fullword wide   
+           $s1 = ""\\REGISTRY\\MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"" fullword wide   
+           $s2 = ""\\REGISTRY\\Machine\\Software\\Microsoft\\Windows NT\\CurrentVersion\\HotFix"" fullword wide   
+           $s3 = ""mntoskrnl.exe"" fullword wide   
+           $s4 = ""\\REGISTRY\\Machine\\System\\CurrentControlSet\\Control\\Session Manager\\Memory Management"" fullword wide   
+           $s5 = ""Memory location: 0x%p, size 0x%08x"" wide fullword   
+           $s6 = ""Service Pack"" fullword wide   
+           $s7 = "".sys"" fullword wide   
+           $s8 = "".dll"" fullword wide         
+           $s10 = ""\\REGISTRY\\Machine\\Software\\Microsoft\\Updates"" fullword wide   
+           $s11 = ""IoGetRelatedDeviceObject"" fullword ascii   
+           $s12 = ""VMEM.sys"" fullword ascii   
+           $s13 = ""RtlGetVersion"" fullword wide   
+           $s14 = ""ntkrnlpa.exe"" fullword ascii   
+         
+       condition:   
+           ( $hd at 0 ) and all of ($s*) and filesize > 160KB and filesize < 200KB   
+   }"
+30345887,ef0c4afdcd17f4150b8bdc92e524cfae7905ba78,YARA,,,"rule apt_regin_vfs    
+   {   
+          
+       meta:   
+           copyright = ""Kaspersky Lab""   
+           author = ""Kaspersky Lab""   
+           description = ""Rule to detect Regin VFSes""   
+           version = ""1.0""   
+           last_modified = ""2014-11-18""   
+          
+       strings:   
+           $a1={00 02 00 08 00 08 03 F6 D7 F3 52}   
+           $a2={00 10 F0 FF F0 FF 11 C7 7F E8 52}   
+           $a3={00 04 00 10 00 10 03 C2 D3 1C 93}   
+           $a4={00 04 00 10 C8 00 04 C8 93 06 D8}   
+          
+       condition:   
+       ($a1 at 0) or ($a2 at 0) or ($a3 at 0) or ($a4 at 0)   
+   }"
+30345888,19c97f98c315c68782d980c76a944a0260f61a92,YARA,,,"rule apt_regin_legspin    
+   {   
+      
+       meta:   
+           copyright = ""Kaspersky Lab""   
+           description = ""Rule to detect Regin's Legspin module""   
+           version = ""1.0""   
+           last_modified = ""2015-01-22""   
+           reference = ""https://securelist.com/blog/research/68438/an-analysis-of-regins-hopscotch-and-legspin/""   
+           md5 = ""29105f46e4d33f66fee346cfd099d1cc""   
+      
+       strings:   
+           $mz=""MZ""   
+           $a1=""sharepw""   
+           $a2=""reglist""   
+           $a3=""logdump""   
+           $a4=""Name:"" wide   
+           $a5=""Phys Avail:""   
+           $a6=""cmd.exe"" wide   
+           $a7=""ping.exe"" wide   
+           $a8=""millisecs""   
+         
+       condition:   
+           ($mz at 0) and all of ($a*)   
+   }"
+30345889,480f70c4858995bb55566eb6cff3ffb51b09b568,YARA,,,"rule apt_regin_rc5key    
+   {   
+          
+       meta:   
+           copyright = ""Kaspersky Lab""   
+           description = ""Rule to detect Regin RC5 decryption keys""   
+           version = ""1.0""   
+           last_modified = ""2014-11-18""   
+          
+       strings:   
+           $key1={73 23 1F 43 93 E1 9F 2F 99 0C 17 81 5C FF B4 01}   
+           $key2={10 19 53 2A 11 ED A3 74 3F C3 72 3F 9D 94 3D 78}   
+      
+       condition:   
+           any of ($key*)   
+   }"
+30345890,4ee233f27137086de33814d1fce4e0b8fb94ec80,YARA,,,"rule apt_regin_2013_64bit_stage1    
+   {   
+          
+       meta:   
+           copyright = ""Kaspersky Lab""   
+           description = ""Rule to detect Regin 64 bit stage 1 loaders""   
+           version = ""1.0""   
+           last_modified = ""2014-11-18""   
+           filename=""wshnetc.dll""   
+           md5=""bddf5afbea2d0eed77f2ad4e9a4f044d""   
+           filename=""wsharp.dll""   
+           md5=""c053a0a3f1edcbbfc9b51bc640e808ce""   
+      
+       strings:   
+           $mz=""MZ""   
+           $a1=""PRIVHEAD""   
+           $a2=""\\\\.\\PhysicalDrive%d""   
+           $a3=""ZwDeviceIoControlFile""   
+      
+       condition:   
+           ($mz at 0) and (all of ($a*)) and filesize < 100000   
+   }"
+30345891,353ae6a4252465295bee8a0efdc77f733cc9abbf,YARA,,,"rule Regin_Sample_Set_2    
+   {   
+      
+       meta:   
+           description = ""Detects Regin Backdoor sample 4139149552b0322f2c5c993abccc0f0d1b38db4476189a9f9901ac0d57a656be and e420d0cf7a7983f78f5a15e6cb460e93c7603683ae6c41b27bf7f2fa34b2d935""   
+           author = ""@MalwrSignatures""   
+           date = ""27.11.14""   
+           hash1 = ""4139149552b0322f2c5c993abccc0f0d1b38db4476189a9f9901ac0d57a656be""   
+           hash2 = ""e420d0cf7a7983f78f5a15e6cb460e93c7603683ae6c41b27bf7f2fa34b2d935""   
+      
+       strings:   
+           $hd = { fe ba dc fe }       
+           $s0 = ""d%ls%ls"" fullword wide   
+           $s1 = ""\\\\?\\UNC"" fullword wide   
+           $s2 = ""Software\\Microsoft\\Windows\\CurrentVersion"" fullword wide   
+           $s3 = ""\\\\?\\UNC\\"" fullword wide   
+           $s4 = ""SYSTEM\\CurrentControlSet\\Control\\Class\\{4D36E972-E325-11CE-BFC1-08002BE10318}"" fullword wide   
+           $s5 = ""System\\CurrentControlSet\\Services\\Tcpip\\Linkage"" wide fullword   
+           $s6 = ""\\\\.\\Global\\%s"" fullword wide   
+           $s7 = ""temp"" fullword wide   
+           $s8 = ""\\\\.\\%s"" fullword wide   
+           $s9 = ""Memory location: 0x%p, size 0x%08x"" fullword wide           
+              
+           $s10 = ""sscanf"" fullword ascii   
+           $s11 = ""disp.dll"" fullword ascii   
+           $s12 = ""%x:%x:%x:%x:%x:%x:%x:%x%c"" fullword ascii   
+           $s13 = ""%d.%d.%d.%d%c"" fullword ascii   
+           $s14 = ""imagehlp.dll"" fullword ascii   
+           $s15 = ""%hd %d"" fullword ascii   
+         
+       condition:   
+           ( $hd at 0 ) and all of ($s*) and filesize < 450KB and filesize > 360KB   
+   }"
+30345892,21f6dbfce85d8e903560d19c56caf6ca20eac435,YARA,,,"rule Regin_sig_svcsstat    
+   {   
+      
+       meta:   
+           description = ""Detects svcstat from Regin report - file svcsstat.exe_sample""   
+           author = ""@MalwrSignatures""   
+           date = ""26.11.14""   
+           hash = ""5164edc1d54f10b7cb00a266a1b52c623ab005e2""   
+      
+       strings:   
+           $s0 = ""Service Control Manager"" fullword ascii   
+           $s1 = ""_vsnwprintf"" fullword ascii   
+           $s2 = ""Root Agency"" fullword ascii   
+           $s3 = ""Root Agency0"" fullword ascii   
+           $s4 = ""StartServiceCtrlDispatcherA"" fullword ascii   
+           $s5 = ""\\\\?\\UNC"" fullword wide   
+           $s6 = ""%ls%ls"" fullword wide   
+      
+       condition:   
+           all of them and filesize < 15KB and filesize > 10KB    
+   }"
+30345893,00f636808f97e6788191754bcb1c3f1ea5be23ca,YARA,,,"rule Regin_APT_KernelDriver_Generic_C    
+   {   
+      
+       meta:   
+           description = ""Generic rule for Regin APT kernel driver Malware - Symantec http://t.co/qu53359Cb2""   
+           author = ""@Malwrsignatures - included in APT Scanner THOR""   
+           date = ""23.11.14""   
+           hash1 = ""e0895336617e0b45b312383814ec6783556d7635""   
+           hash2 = ""732298fa025ed48179a3a2555b45be96f7079712""         
+      
+       strings:   
+           $m0 = { 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 b8 }       
+           $s0 = ""KeGetCurrentIrql"" fullword ascii   
+           $s1 = ""5.2.3790.0 (srv03_rtm.030324-2048)"" fullword wide   
+           $s2 = ""usbclass"" fullword wide   
+           $x1 = ""PADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDING"" ascii   
+           $x2 = ""Universal Serial Bus Class Driver"" fullword wide   
+           $x3 = ""5.2.3790.0"" fullword wide   
+           $y1 = ""LSA Shell"" fullword wide   
+           $y2 = ""0Richw"" fullword ascii          
+          
+       condition:   
+           $m0 at 0 and all of ($s*) and ( all of ($x*) or all of ($y*) )  and filesize < 20KB   
+   }"
+30345894,3a12a0db67ed295e5331558b7fa84f1f4eee13ee,YARA,,,"rule Regin_Sample_2    
+   {   
+      
+       meta:   
+           description = ""Auto-generated rule - file hiddenmod_hookdisk_and_kdbg_8949d000.bin""   
+           author = ""@MalwrSignatures""   
+           date = ""26.11.14""   
+           hash = ""a7b285d4b896b66fce0ebfcd15db53b3a74a0400""   
+      
+       strings:   
+           $s0 = ""\\SYSTEMROOT\\system32\\lsass.exe"" fullword wide   
+           $s1 = ""atapi.sys"" fullword wide   
+           $s2 = ""disk.sys"" fullword wide   
+           $s3 = ""IoGetRelatedDeviceObject"" fullword ascii   
+           $s4 = ""HAL.dll"" fullword ascii   
+           $s5 = ""\\Registry\\Machine\\System\\CurrentControlSet\\Services"" fullword ascii   
+           $s6 = ""PsGetCurrentProcessId"" fullword ascii   
+           $s7 = ""KeGetCurrentIrql"" fullword ascii   
+           $s8 = ""\\REGISTRY\\Machine\\System\\CurrentControlSet\\Control\\Session Manager"" wide   
+           $s9 = ""KeSetImportanceDpc"" fullword ascii   
+           $s10 = ""KeQueryPerformanceCounter"" fullword ascii   
+           $s14 = ""KeInitializeEvent"" fullword ascii   
+           $s15 = ""KeDelayExecutionThread"" fullword ascii   
+           $s16 = ""KeInitializeTimerEx"" fullword ascii   
+           $s18 = ""PsLookupProcessByProcessId"" fullword ascii   
+           $s19 = ""ExReleaseFastMutexUnsafe"" fullword ascii   
+           $s20 = ""ExAcquireFastMutexUnsafe"" fullword ascii   
+          
+       condition:   
+           all of them and filesize < 40KB and filesize > 30KB   
+   }"
+30345895,6d3a7566ce588d9e231c835486875aee9f121b4e,YARA,,,"rule apt_regin_2011_32bit_stage1    
+   {   
+          
+       meta:   
+           copyright = ""Kaspersky Lab""   
+           description = ""Rule to detect Regin 32 bit stage 1 loaders""   
+           version = ""1.0""   
+           last_modified = ""2014-11-18""   
+          
+       strings:   
+           $key1={331015EA261D38A7}   
+           $key2={9145A98BA37617DE}   
+           $key3={EF745F23AA67243D}   
+           $mz=""MZ""   
+      
+       condition:   
+           ($mz at 0) and any of ($key*) and filesize < 300000   
+   }"
+30345896,4139149552b0322f2c5c993abccc0f0d1b38db4476189a9f9901ac0d57a656be,FileHash-SHA256,,,
+5646255,e420d0cf7a7983f78f5a15e6cb460e93c7603683ae6c41b27bf7f2fa34b2d935,FileHash-SHA256,,,
+5646258,fe1419e9dde6d479bd7cda27edd39fafdab2668d498931931a2769b370727129,FileHash-SHA256,,,
+5647607,29105f46e4d33f66fee346cfd099d1cc,FileHash-MD5,,,
+5647609,6c34031d7a5fc2b091b623981a8ae61c,FileHash-MD5,,,
+30345897,5164edc1d54f10b7cb00a266a1b52c623ab005e2,FileHash-SHA1,,,
+30345898,732298fa025ed48179a3a2555b45be96f7079712,FileHash-SHA1,,,
+30345899,773d7fab06807b5b1bc2d74fa80343e83593caf2,FileHash-SHA1,,,
+30345900,8487a961c8244004c9276979bb4b0c14392fc3b8,FileHash-SHA1,,,
+30345901,a7b285d4b896b66fce0ebfcd15db53b3a74a0400,FileHash-SHA1,,,
+30345902,bcf3461d67b39a427c83f9e39b9833cfec977c61,FileHash-SHA1,,,
+30345903,e0895336617e0b45b312383814ec6783556d7635,FileHash-SHA1,,,
+132,outlookexchange.net,domain,,,
+133,rpgallerynow.info,domain,,,
+134,msoutexchange.us,domain,,,
+135,dmforever.biz,domain,,,
+136,lifehealthsanfrancisco2015.com,domain,,,
+137,outlookscansafe.net,domain,,,
+138,nickgoodsite.co.uk,domain,,,
+139,ellismikepage.info,domain,,,
+140,junomaat81.us,domain,,,
+31088009,40ab2de3f12265a1a020865f2bf074e513f4a237,YARA,,,"rule macrocheck : maldoc   
+   {   
+       meta:   
+           Author      = ""Fireeye Labs""   
+           Date        = ""2014/11/30""    
+           Description = ""Identify office documents with the MACROCHECK credential stealer in them.  It can be run against .doc files or VBA macros extraced from .docx files (vbaProject.bin files).""   
+           Reference   = ""https://www.fireeye.com/blog/threat-research/2014/11/fin4_stealing_insid.html""   
+      
+       strings:   
+           $PARAMpword = ""pword="" ascii wide   
+           $PARAMmsg = ""msg="" ascii wide   
+           $PARAMuname = ""uname="" ascii   
+           $userform = ""UserForm"" ascii wide   
+           $userloginform = ""UserLoginForm"" ascii wide   
+           $invalid = ""Invalid username or password"" ascii wide   
+           $up1 = ""uploadPOST"" ascii wide   
+           $up2 = ""postUpload"" ascii wide   
+       
+       condition:   
+           all of ($PARAM*) or (($invalid or $userloginform or $userform) and ($up1 or $up2))   
+   }"
+141,c74df42cfc7c7221f7f28c67bd726a1caad8453fc35daddfb094aaeede2e8e1e,FileHash-SHA256,,,
+142,65509837e15b6a914b611c2d5066ba06ded39b0bed288552e65df20610e35976,FileHash-SHA256,,,
+143,5ac9f4e25ef4002274496e18ea537b4c582a3acf3126cc1830a63941d9c91e64,FileHash-SHA256,,,
+144,ad71283aadb2455f7a1cd4e8283c789599c33d328da44965f6c282f2e600e1b2,FileHash-SHA256,,,
+145,e4d43cd20d4ea59f68c26d46c30e1819cac5b9552d27fce826b0855494018267,FileHash-SHA256,,,
+146,d5d1fa5b5474089e59c05ca88a96257d4449d852b429c620aa773408bd48d067,FileHash-SHA256,,,
+147,1efad3bce90ac1d2011ba686f1ab0e435b9a709763fb238dbcad0f44acddccbe,FileHash-SHA256,,,
+148,75b77606175ee696395f1b0e6850d5cd6596e34f74804b30c9bf9e368ebcd299,FileHash-SHA256,,,
+149,9aec3f14ec69e9942a7d3075bb5479dc5fa61e6c2a03cbee1a9269264efac51c,FileHash-SHA256,,,
+150,dc22e4b5ef752d3ec47d7bb3de7534e4a2daa2642de8c9839ad262d33a7aa7dc,FileHash-SHA256,,,
+151,15121b7cbd15143fc0118e06ebe70b7dc1e239b21d865b2c750ed8a0f1f00ef2,FileHash-SHA256,,,
+152,1aa25a930e8bae5abbe75907c335c7d1d875b60f72f02855a8d37daadc6b469f,FileHash-SHA256,,,
+153,7199acca3d851889efa4a5a42b3f55010f4916294201ce5ad20c76898200ffa9,FileHash-SHA256,,,
+154,e339c7b77113f1a1c4c2f7e307b785cc4fc9145663fe3a612079240efcc9ac93,FileHash-SHA256,,,
+155,3bdbf591fa0d81606929fdf6abe44ba6e185dd8fc0fa62ade8afde48f704d11a,FileHash-SHA256,,,
+156,9ba06cb9dcd05e6866ee0e9ecc0c9a480d5b6c8d177ef1907d7fcc02e2871806,FileHash-SHA256,,,
+157,0510efd8eae869cd0773a033d5a46d6b7f0162174019e54618887f3085312fcb,FileHash-SHA256,,,
+158,2db6f74a8aef9fe86aef5dff3334e8dd252ac45e26b4a12e8641a770bbb08b45,FileHash-SHA256,,,
+159,c901d84878f50a93ab76f2ea31763bebb0acf0c0f9ad86b3abf98e5cde499332,FileHash-SHA256,,,
+160,abb0ebd57cf2b0d54cd2b01fd9b11ccd9ed68053174d131922811a9ad22459ea,FileHash-SHA256,,,
+161,b42ef5f39aaf6e52ff4e0510b6e5c3fb5c84bf35befcde8bcc18dc86bccbdfb4,FileHash-SHA256,,,
+162,3d18e18ae97045cc3198026ddc681e7d957a25402b79141a3c6fdc18bb879ad6,FileHash-SHA256,,,
+163,aa23c55bed562cbf47c84092d0a35b0da35e3db3982a18a28fb45ca70ac6b399,FileHash-SHA256,,,
+164,eea0dcabaabef075081e23fc91b84e07042117bb0362e59f11b17338108d0c1b,FileHash-SHA256,,,
+165,ee33dd17802ca906fcc68815ff2a7d12ac7fab7f1c272a56444e4fd6715a6227,FileHash-SHA256,,,
+166,20dddd8651a26161139b49dfabfb3b4b743c57fcc982afc11d1c5c4264a2a8be,FileHash-SHA256,,,
+167,2e32c6c9179750df7f1ab35536f09c6b09c73faccea7325fe5c79b5087f5dd6f,FileHash-SHA256,,,
+168,a321158d7f5be572ac5536ad57cb4a312bea52430b03da9dda97f4548a080bc3,FileHash-SHA256,,,
+169,7890a726603edcd70b6e6f3de367cf891131d833d14c506b26e07935a715048f,FileHash-SHA256,,,
+170,80ed4e7a242ee3d1c2656affb04cd56e7262e5a6bf2bec2f8435aa3f47c9b5d1,FileHash-SHA256,,,
+171,650f143ac0a668536b6750a628ec51e7ca28f5520105eeb87308f557cd74e63c,FileHash-SHA256,,,
+172,634685e43e9f73343cb337ec64a8679485e1ddb4c2de5ecb6a5746aa5ddb1b72,FileHash-SHA256,,,
+173,7b9fd4b9b36cf84fcbcb3e9bf589d8a51c2166558baf462ab312929fbb584642,FileHash-SHA256,,,
+174,6474f74340e7199919e7532c6756cf459cd20c3391852d80b058eb7997a31e9f,FileHash-SHA256,,,
+175,b18f80a02d45eaed618993447c82916ad8802e552dddccf733a3698794d8cb9d,FileHash-SHA256,,,
+176,08065f658d65773e583e9ca784148117d87be3a5005a0871cbc4446f42ed5040,FileHash-SHA256,,,
+177,aa7ac2a053ceba819fcd1c8b273db64296c2754a8101291870e142519c416b1b,FileHash-SHA256,,,
+178,42ca980b7fc7892716a923c7bf3ff6a76ce81f81bd0a83bea40a1735f33b36b8,FileHash-SHA256,,,
+179,10cf7a186897243363278cf0283a1687749d9ba43fa713b9f974050f56e97cca,FileHash-SHA256,,,
+180,f7e1a74e08c5718de9edc57facc26dda97ae5b723420a06ef56f1f6f8aa6fb5a,FileHash-SHA256,,,
+181,b49706b7d5432a368070ee58aa8776cce1ddc2098e863b1b7b36d7b7d79fe6a9,FileHash-SHA256,,,
+182,cffba2a145d91bdecfa8cb32af6964576889faa04591b503a58507cf89ab7cae,FileHash-SHA256,,,
+183,3a7ebd7f502fd3f6b3b88693b1123147621b4030c21df9e0690864e8969e149a,FileHash-SHA256,,,
+184,e2e9d60c76225db77668440ff698eacef48b544ffab1ae0c641dcedb5ad570bd,FileHash-SHA256,,,
+185,e250bce96e5f0c162dbe4d87a1a7d65deb910f59c0bea1140897c22eb9dca501,FileHash-SHA256,,,
+186,bb2b135c7a9b366ec7090404761a9ee9e7c03c56d68165a6789a29e804104068,FileHash-SHA256,,,
+187,ad5fbf8e381d92225aa6c022e2bbc175be0e33138b5fa4bbb508b970b33bbc1e,FileHash-SHA256,,,
+188,9ebbd300ddf70bccbecfe3bf47898e5959cfc090cef8716e2e638d840a24007b,FileHash-SHA256,,,
+189,4f131095ba56f6d3621a007985ac758d780b0c837f554f6e44d535ed55d33af1,FileHash-SHA256,,,
+190,0d1f479842cd5bde4f18ab8c85a099da39e13a4051a7c21334e33d55b6f18d76,FileHash-SHA256,,,
+191,af8deedc78097c387926bb95ebd6ab2a870349794f452f35f84132b0dbe12e09,FileHash-SHA256,,,
+192,616a25378f70474bcb3ad0fad2f1383009c5b7b3cea937be2a5234a110d64b78,FileHash-SHA256,,,
+193,dc21a2189f9e2d63872c0b5ee7ec75316799c60eb018ba9b98398b69efe45365,FileHash-SHA256,,,
+194,b275caf4cbc4f47b3d772886172438b81a2e11ff5a8683be488de4b219b39070,FileHash-SHA256,,,
+195,d8c7aef47bac024188d929e749e90ac172fd51b8f6e16dec4b6635dc2ffa85ef,FileHash-SHA256,,,
+196,c11a244cba9da30173ff1dcb755a377c3b2b1f99cd15a887041937b086113ebd,FileHash-SHA256,,,
+197,8813bd0b4ad6c6155b571c9c1fbcabfeed3812ab8fbd9acd8372385094aaa565,FileHash-SHA256,,,
+198,8129345ce66643d880a3e01e607399279dec7bf9cadc06d9b26134f6d205ed06,FileHash-SHA256,,,
+199,6888723e56f2e7696ac1e1910f68a1d54d7c76e9eb8e69554980b04e881e0e86,FileHash-SHA256,,,
+200,b99cddd428e78ede109c7bd3683c374ac6010a15c0633939511e39c1ed99f621,FileHash-SHA256,,,
+201,fd4a9af7ba67f794a83a720539666e89f288686a432b5c7133033a2ebde266cc,FileHash-SHA256,,,
+202,5d1e81f5a4fca25b7afb18eb906c9a53965d81dcf62f9d91499baf03229a8de8,FileHash-SHA256,,,
+203,508c7691d535102538aaa6dce32d750c2492dada36506a390c1959f261a0244b,FileHash-SHA256,,,
+204,d4e54c1bc1efba20d75861c01bb2cc053b1ab9fadae29bf6c4c04528110056e6,FileHash-SHA256,,,
+205,c9fc8133e755c14cb02872ba05a2332baefe5e94797479aded46c3db83a7cc14,FileHash-SHA256,,,
+206,39ba1710545fc9e123abbbce61bda1b00525e59346570a3f8c36f7adde5bb47e,FileHash-SHA256,,,
+207,10647c4e7b1b741aeaea9b16d8eb5dae3237ce00dc69f6843790767a277b6204,FileHash-SHA256,,,
+208,0ce968ea8cffb6312f6d17af9044a14f79d6427b9038bcfc6212acb5aa23e74b,FileHash-SHA256,,,
+209,064e47074342a6e026de068adaf48c41b2ec2c341c7514768cb7b39425905524,FileHash-SHA256,,,
+210,32aa8f19e452a1471640cd7be72f806e1997fd5a1a2b2743898ee4cd0aed0dc5,FileHash-SHA256,,,
+211,cd75664edea18e3aa303763e6f6c639b3e90ead4b51c2b3e41c808e3d968c848,FileHash-SHA256,,,
+212,fbc531e83359310e2940ffff180a26e28d55396710c748e2ae7e64357273a09d,FileHash-SHA256,,,
+213,1578a4c641f0c7913cdf08267d1a88ac384d586c453b922670be380b7e67a179,FileHash-SHA256,,,
+214,aebac79b820891510b9e14ef97892875bf4197797ca91aef149acdc1e6bf6a7c,FileHash-SHA256,,,
+215,d11b504b18bc8615e98f3c37d98c6fe11216a0f070a056414ca4407fc298fbd6,FileHash-SHA256,,,
+216,8f9a45ba73c67ba9c4958ea49508c350a0e1c3caf476ccab2fb8cb3049e3ba46,FileHash-SHA256,,,
+217,48437fe7d7d0c5fbde340e1392662f7fc421fc05d7c9824f71160475105ad999,FileHash-SHA256,,,
+218,ad06e03fdd9eff480ca623ea23ec87c794d99ae6dda308c979fa5173b2b8a514,FileHash-SHA256,,,
+219,50d11ad32eb72b128185a0aecf39be8085b6b1a8f30cb41d8bc177a1ff8f3067,FileHash-SHA256,,,
+220,e509843b2c061fa5e6ea7d11554bb22f36e6b79b7cd5cc0639ff63d48ce66336,FileHash-SHA256,,,
+221,039ce41fb40a27a46c43bf7ef7d1b08cd5e3f6d71ec08e140cd9166247e783af,FileHash-SHA256,,,
+222,caa769a21bf97987de4cc92874eaa03e7b0538082c502606aa8ca97823e2e2aa,FileHash-SHA256,,,
+223,1698d8168e860c3377646b12444d38a2e6aebba5a499504a5fc0a73b91d89407,FileHash-SHA256,,,
+224,8f02dfd900760cb2c84e4f5a859512f5d719daae063a719c956cbf6185004da5,FileHash-SHA256,,,
+225,c99fa90038cec60d9aa21a49e537ad9ea55672ed78cf5b429cb4c75ebc5ccd69,FileHash-SHA256,,,
+226,2a13730f8f16e04cece490eee53bbdcc9bd1e01fbbc2a758562a6462d9473742,FileHash-SHA256,,,
+227,e3b38627d9e94a7e084e12cbd2acf7e66ce90021972061f8b9b61316eddb3bd6,FileHash-SHA256,,,
+228,9801f7c552cbcf8c413dade920b96be2eaad9624ba4adaf17f80f815dac58974,FileHash-SHA256,,,
+229,3fa302449da1e4fad81143cc48fc80034cbc41804f00e00ac17bdb7dba0b992d,FileHash-SHA256,,,
+230,c1c1e5b43b1ac9af79aafa59a6062468142afc2278b6fea0bb4dbbb83af65d06,FileHash-SHA256,,,
+231,902f2391b1075e14985bc91316c98cdcf3442ecaeb3ef12422813f946ab8409e,FileHash-SHA256,,,
+232,d045ea925cf461da5c58cc2af8a0f96ec7c961ea62ffcf1de0b04abf9b0fa8ac,FileHash-SHA256,,,
+233,d3c2488d321ca6760986fc1a55a3c1db3f7b215fc2883d7e4fabc2871b5a27ac,FileHash-SHA256,,,
+234,c9010e060de6a83c3802ed4e6b7f544e6eb2b5420ee2be5c71646e6a27182bea,FileHash-SHA256,,,
+235,b4d4c421bc70e5a3345d4b8c9d1090ff16ff82870bd38216bb8bac7f1088dafb,FileHash-SHA256,,,
+236,0fee562cd821f53e864e02b00a59780aed63abca9f7502678fca9bf47b8b12bd,FileHash-SHA256,,,
+237,c30a2fe22050dcac30616a3d27d5c92ea2815d060b365747984913758a209aaa,FileHash-SHA256,,,
+238,37af3f3b3c43690a2e73d4b5edb968896ec4da7b2c21b12a94e146a10f07fef8,FileHash-SHA256,,,
+239,e401340020688cdd0f5051b7553815eee6bc04a5a962900883f1b3676bf1de53,FileHash-SHA256,,,
+240,550a33353730579a7d2b9276cc3b66ca252a59e198285c732fcda46513351c03,FileHash-SHA256,,,
+241,ac272bd9701c5d9cb7e8d1a4e2a191a894e98aa463fb17628c52da16612627d8,FileHash-SHA256,,,
+242,79ca080a152bd44f9b07af0f940c303e45e10d516633384f5b3d34a29d0d03c8,FileHash-SHA256,,,
+243,ca7138bfe08b480386653072482e58f6c48b05a1e7fb8a82cc042806eae9acc2,FileHash-SHA256,,,
+244,1756ba79cd63458a50df86203380824ea855c8d6bf1c673e05a13a62f14cd170,FileHash-SHA256,,,
+245,45a2ea5226c1ce11e8955c99d5b58fd3baa66fb53436be63cb099e96ef30db43,FileHash-SHA256,,,
+246,ed85c3f8d2cccbb6a0ec2b4b27b158b4dbc6885245081901dd51eb2266f4b2bf,FileHash-SHA256,,,
+247,e180f933aad709883acde441ee64407d49fa4183ae5130480005a0e81a0de491,FileHash-SHA256,,,
+248,bf7746d29330b666d82b153989d41406305572b92f6b24a1f1adef6374b58328,FileHash-SHA256,,,
+249,bfa66edd0d9ae2c8179893ee881f479b37dce0ce8220a8a18e1b42a879ddff4a,FileHash-SHA256,,,
+250,5fb4ae33cac8b2b74e63fc639eeb969a660ef9a7e8310c2769acc925122f047e,FileHash-SHA256,,,
+251,be4cc2d1504002107a77bb943ad2d22c205cdcc6ad4804c0440970e5e922d30d,FileHash-SHA256,,,
+252,67a2b9c32653161fafaea231b6661d9d797bb0964c79c9ee46cf2bf76571ed45,FileHash-SHA256,,,
+253,odeconline.com,domain,,,
+254,microsoftmiddleast.com,domain,,,
+255,doosan-job.com,domain,,,
+256,microsoftwindowsupdate.net,domain,,,
+257,microsoftwindowsresources.com,domain,,,
+258,microsoftupdateserver.net,domain,,,
+259,drivercenterupdate.com,domain,,,
+260,windowsupdateserver.com,domain,,,
+261,windowssecurityupdate.com,domain,,,
+262,googleproductupdate.com,domain,,,
+263,microsoftserverupdate.com,domain,,,
+264,teledyne-jobs.com,domain,,,
+265,microsoftactiveservices.com,domain,,,
+266,gesunddurchsjahr.de,domain,,,
+267,northropgrumman.net,domain,,,
+268,windowsserverupdate.com,domain,,,
+269,windowscentralupdate.com,domain,,,
+270,googleproductupdate.net,domain,,,
+271,easyresumecreatorpro.com,domain,,,
+272,downloadsservers.com,domain,,,
+273,microsoftonlineupdates.com,domain,,,
+274,www.gesunddurchsjahr.de,hostname,,,
+275,kundenpflege.menrad.de,hostname,,,
+276,9a48bee62c41c0640e9564cc37f718bf,FileHash-MD5,,,
+277,68cfc418c72b58b770bdccf19805703e,FileHash-MD5,,,
+278,e8ea10d5cde2e8661e9512fb684c4c98,FileHash-MD5,,,
+279,19d9b37d3acf3468887a4d41bf70e9aa,FileHash-MD5,,,
+280,6061410c04b9fa9e47593611a02ff2dd,FileHash-MD5,,,
+281,985e86ac1854585d2771fd173b63b98b,FileHash-MD5,,,
+282,736aab6c731d098931d6a4bf11a8150e,FileHash-MD5,,,
+283,9ef9ec11c9f83dde38556feaf88b2a29,FileHash-MD5,,,
+284,1c2bc564805695dbb3a26d9c9f7dffea,FileHash-MD5,,,
+285,9bcb8091ba414a38bfb7a39eccf3f6bc,FileHash-MD5,,,
+286,96e372dea573714d34e394550059b1d7,FileHash-MD5,,,
+287,21829130d5e2a69b0f6963c68b070127,FileHash-MD5,,,
+288,e7428dec7deb041692d6575e069c1cf0,FileHash-MD5,,,
+289,2e36a3f3b888c1fd3c3aa3f1ba7969ad,FileHash-MD5,,,
+290,8994e16b14cde144a9cebdff685d8676,FileHash-MD5,,,
+291,c1b5464c0506bea6cf778dd18fa456cc,FileHash-MD5,,,
+292,5837ad676f6c0f0f4f48096648d6e81b,FileHash-MD5,,,
+293,836ef6b06c5fd52ecc910a3e3408004a,FileHash-MD5,,,
+294,14a80287490f3a68d99c0f518b246fd2,FileHash-MD5,,,
+295,17d1f25185b31044eb89a99d50d36a26,FileHash-MD5,,,
+296,bd9fbbbd7dab62ed6a56d00f21c4c67e,FileHash-MD5,,,
+297,04fdf5b757764af8bc7ef88e0f8fe8c1,FileHash-MD5,,,
+298,baa76a571329cdc4d7e98c398d80450c,FileHash-MD5,,,
+299,01606d42c64e4d15ea07d4e1fbd0c40d,FileHash-MD5,,,
+300,18efd3f66d23c5c555e128a19de63667,FileHash-MD5,,,
+301,5eef1ee37714c9ee07653419890010d6,FileHash-MD5,,,
+302,641fc6831d8c215e9645cf5d4a8be5e5,FileHash-MD5,,,
+303,10d019932fc43e9b39be709f8281203d,FileHash-MD5,,,
+304,ad99db10c0c12eaea09b39568a761b52,FileHash-MD5,,,
+305,48dd515e2b148493cf47b0c0c5713573,FileHash-MD5,,,
+306,b163fcda16d8fe860a906f768ef27bc8,FileHash-MD5,,,
+307,b2d78ecce135e008adc3e80915f69798,FileHash-MD5,,,
+308,69f9705ecdcc709506f7665ad373c1a0,FileHash-MD5,,,
+309,be6273ebd472a2a499a6c1e48ae81112,FileHash-MD5,,,
+310,54def27d598b75f297a8cf2c97150997,FileHash-MD5,,,
+311,c440ec0a8cf7341b746160a684c51741,FileHash-MD5,,,
+312,42714874f86fa9bd97e9be460d7d72c0,FileHash-MD5,,,
+313,855239a2434a3bc78751d9ba9cfac900,FileHash-MD5,,,
+314,0593352cadb2789c19c2660e02b2648b,FileHash-MD5,,,
+315,e4c9e8f28894e89d6270ad6a4c6cd064,FileHash-MD5,,,
+316,1d8fd8c357907a79f3e6d9f831f2bd7d,FileHash-MD5,,,
+317,6cd5f1982693f2ce21effddf18f5baf5,FileHash-MD5,,,
+318,0b2cbfa07fa9a090b35a3dfdb0ebad9d,FileHash-MD5,,,
+319,41eeae4158152f49ab64601c4358a7a1,FileHash-MD5,,,
+320,0405adfc8739025ba88c746c8edebfb8,FileHash-MD5,,,
+321,6ef950941d114c09af359402620d7cba,FileHash-MD5,,,
+322,08eabb6164b1b12307931e4f2d95f7c6,FileHash-MD5,,,
+323,b7ddb09bdc0d0eb39c364d9b9d6436cc,FileHash-MD5,,,
+324,9838f7ead2023061eb79587243910daa,FileHash-MD5,,,
+325,53230e7d5739091a6eb51298a50eb616,FileHash-MD5,,,
+326,4e483762f555b078976a1ddf3fc3e532,FileHash-MD5,,,
+327,758f2557922e360bff3d1565e6871ea1,FileHash-MD5,,,
+328,61e307a651a7bbce78eb48c1d395501a,FileHash-MD5,,,
+329,eb48c318e8fd9a2a7a18da6578db05d6,FileHash-MD5,,,
+330,735cdf3a3e9c06d88de31112782ef831,FileHash-MD5,,,
+331,336b501bd96e309f93c8d12960634248,FileHash-MD5,,,
+332,b3d5e1ff7a7ff10cd738b215f92d1ad5,FileHash-MD5,,,
+333,9376e5b754ccd94f7c66b811d81e240e,FileHash-MD5,,,
+334,5e5d6469b270aa60dc90ddfde32ba082,FileHash-MD5,,,
+335,144064951cceaf1bb81e8f215de76101,FileHash-MD5,,,
+336,9feee6fe54ee4ec859f7bad0d798ac4e,FileHash-MD5,,,
+337,d000071a6bf49da390fef8f12aa9e3f8,FileHash-MD5,,,
+338,e8b1f23616f9d8493e8a1bf0ca0f512a,FileHash-MD5,,,
+339,304f7f17031af90012d4e4d1cc5cfb8a,FileHash-MD5,,,
+340,537b42d3cd9812e5b583131b83a48508,FileHash-MD5,,,
+341,c91887d861d9bd4a5872249b641bc9f9,FileHash-MD5,,,
+342,42e459d1d057bd937e0d00958e591f08,FileHash-MD5,,,
+343,5a4046fd0825641766b197a2132d2410,FileHash-MD5,,,
+344,cbe05db979444589211e830487df7610,FileHash-MD5,,,
+345,be741520f13a2bf8bc064a73e146bf08,FileHash-MD5,,,
+346,3b6260ead85b4f0d706203e062a34a21,FileHash-MD5,,,
+347,bfc59f1f442686af73704eff6c0226f0,FileHash-MD5,,,
+348,c5282f088b90de1ab758424b152d34ac,FileHash-MD5,,,
+349,0900c3319e4c46ff9478e3e1fa9528a1,FileHash-MD5,,,
+350,f1301bad6da06f436e3a3de0244848e1,FileHash-MD5,,,
+351,84384d77ac9835720375943235d33a87,FileHash-MD5,,,
+352,eac61634da4513a10b596e6c8c299126,FileHash-MD5,,,
+353,6d4d21258eef96979ce6f2417c6c019f,FileHash-MD5,,,
+354,1c7e40443e36c4b7592617f0a271835d,FileHash-MD5,,,
+355,f3d80d813dc6a239d921169c57c5789d,FileHash-MD5,,,
+356,adf77661a409b5a1304d08b62a1264f5,FileHash-MD5,,,
+357,0ad6a01a916f14fc24fa43e46813b3bb,FileHash-MD5,,,
+358,0512c5a8807e4fdeb662e61d81cd1645,FileHash-MD5,,,
+359,cb52f84d462ac67bde53eec40128408c,FileHash-MD5,,,
+360,948c570269059928517f155b4b6db1a4,FileHash-MD5,,,
+361,ad94daecadbac8a54e81a69cacc41441,FileHash-MD5,,,
+362,38998ff6f9a3874b6943d7ac837d19c3,FileHash-MD5,,,
+363,53841511791e4cac6f0768a9eb5def8a,FileHash-MD5,,,
+364,af58d803b2e0b5d0f194c25ff85a8d81,FileHash-MD5,,,
+365,0acd8945bd162e5e7aa982cddbd8ecaa,FileHash-MD5,,,
+366,e4e5f1efe44ac06bc3672fd1d8f85630,FileHash-MD5,,,
+367,61896424e995476b23f73a5c1c34af5e,FileHash-MD5,,,
+368,e0f6c5fdde04fbf8cd1a42f75cb06248,FileHash-MD5,,,
+369,94ef4f98b9c321f74778811f64c68d03,FileHash-MD5,,,
+370,78a63bc8433cea162e31a5865d5817c9,FileHash-MD5,,,
+371,d84c3d678f269a0c6beb22ed266efac0,FileHash-MD5,,,
+372,1223e93dd4a5ad0536c8232936cb35fe,FileHash-MD5,,,
+373,afdfafb2c1e2af1a48e833da8f35bb83,FileHash-MD5,,,
+374,9e00a52caec6385e0ab1e21e9794a5b0,FileHash-MD5,,,
+375,0b80a8d2c56789b4bda9a56a53e7e2b1,FileHash-MD5,,,
+376,e5428bcae8b4e84cb5186ad5c83ffc98,FileHash-MD5,,,
+377,69d80a27ab0c85ef073badbee7ec55c7,FileHash-MD5,,,
+378,0f4b526d8edf1d3d32c81a692c325733,FileHash-MD5,,,
+379,30120cf30ea4d870635893cd75338f97,FileHash-MD5,,,
+380,491f031d0a9ad4919cb29cb2d9a9a65c,FileHash-MD5,,,
+381,fa7c9a78eda0f3bb9ff8ec827d5bc9ff,FileHash-MD5,,,
+382,765f3db4421bdf8bb953dffe37398453,FileHash-MD5,,,
+383,18942a44d2b5f2bbf54e2c18ac293915,FileHash-MD5,,,
+384,6094f64d54575a2d5a3fbd2d23c4f44e,FileHash-MD5,,,
+385,de744bcb7c63b035b6c5c3ec0279c3ac,FileHash-MD5,,,
+386,de56ca66423fc5e42808445f2b5631d3,FileHash-MD5,,,
+387,636c2d2855ac8a8693c4ef9e89c67205,FileHash-MD5,,,
+388,203.150.224.249,IPv4,Expired,,
+389,50.23.164.161,IPv4,Expired,,
+390,212.87.154.14,IPv4,Expired,,
+391,87.98.167.71,IPv4,Expired,,
+392,207.182.142.68,IPv4,Expired,,
+393,66.96.252.198,IPv4,Expired,,
+394,64.120.128.154,IPv4,Expired,,
+395,95.211.241.249,IPv4,Expired,,
+396,88.150.214.168,IPv4,Expired,,
+397,184.82.158.18,IPv4,Expired,,
+398,88.150.214.162,IPv4,Expired,,
+399,80.243.182.149,IPv4,Expired,,
+400,88.150.214.166,IPv4,Expired,,
+401,108.175.152.230,IPv4,Expired,,
+402,173.192.144.68,IPv4,Expired,,
+403,108.175.153.158,IPv4,Expired,,
+404,78.109.194.114,IPv4,Expired,,
+405,87.98.167.141,IPv4,Expired,,
+407,87.98.167.85,IPv4,Expired,,
+408,159.253.144.209,IPv4,Expired,,
+409,95.211.191.225,IPv4,Expired,,
+410,184.82.181.48,IPv4,Expired,,
+411,95.211.241.251,IPv4,Expired,,
+412,212.87.154.12,IPv4,Expired,,
+413,64.120.208.78,IPv4,Expired,,
+414,88.150.214.170,IPv4,Expired,,
+415,64.120.208.76,IPv4,Expired,,
+416,64.120.208.75,IPv4,Expired,,
+417,64.120.208.74,IPv4,Expired,,
+418,188.227.180.213,IPv4,Expired,,
+419,64.120.208.154,IPv4,Expired,,
+420,174.36.195.158,IPv4,Expired,,
+421,192.111.145.197,IPv4,Expired,,
+422,ahmadi@odeconline.com,email,,,
+423,zahiry_alireza@yahoo.com,email,,,
+424,azlinux73@gmail.com,email,,,
+425,tarh.andishan@yahoo.com,email,,,
+426,domain@netafraz.com,email,,,
+427,terafficanalyzer@yahoo.com,email,,,
+428,zahiry.alireza@gmail.com,email,,,
+429,davejsmith200@outlook.com,email,,,
+430,dyanachear@beyondsys.com,email,,,
+431,ghanbarianco@gmail.com,email,,,
+432,kafe0@yahoo.com,email,,,
+433,btr.8624@yahoo.com,email,,,
+434,testmail_00001@yahoo.com,email,,,
+435,salman.ghazikhani@outlook.com,email,,,
+436,dg_co@yahoo.com,email,,,
+30345413,331fc928053b262f42ac9e2367fb818709161862,YARA,,,"rule LoggerModule   
+   {   
+      
+     meta:   
+       author = ""Cylance""   
+       date = ""2014-12-02""   
+       description = ""http://cylance.com/opcleaver""   
+      
+     strings:   
+       $s1 = ""%s-%02d%02d%02d%02d%02d.r""   
+       $s2 = ""C:\\Users\\%s\\AppData\\Cookies\\""   
+      
+     condition:   
+       all of them   
+   }"
+30345414,bf6e9353d018cad66aad9bd66897b14eb1ba08e0,YARA,,,"rule wndTest   
+   {   
+      
+     meta:   
+       author = ""Cylance""   
+       date = ""2014-12-02""   
+       description = ""http://cylance.com/opcleaver""   
+      
+     strings:   
+       $s1 = ""[Alt]"" wide   
+       $s2 = ""<< %s >>:"" wide   
+       $s3 = ""Content-Disposition: inline; comp=%s; account=%s; product=%d;""   
+      
+     condition:   
+       all of them   
+   }"
+30345415,d5195bff38bce49834f0d041852e6b5811b14e10,YARA,,,"rule OPCLEAVER_Parviz_Developer   
+   {   
+      
+       meta:   
+           description = ""Parviz developer known from Operation Cleaver""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Florian Roth""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""Users\\parviz\\documents\\"" nocase   
+      
+       condition:   
+           $s1   
+   }"
+30345416,8741a7616a292928fcac1f4a9d553bed35c742b4,YARA,,,"rule OPCLEAVER_zhmimikatz   
+   {   
+      
+       meta:   
+           description = ""Mimikatz wrapper used by attackers in Operation Cleaver""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Cylance Inc.""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""MimikatzRunner""   
+           $s2 = ""zhmimikatz""   
+      
+       condition:   
+           all of them   
+   }"
+30345417,8a36897f0e2d7574aa73d9836075dfeae4f4bce9,YARA,,,"rule pvz_out   
+   {   
+      
+     meta:   
+       author = ""Cylance""   
+       date = ""2014-12-02""   
+       description = ""http://cylance.com/opcleaver""   
+      
+     strings:   
+       $s1 = ""Network Connectivity Module"" wide   
+       $s2 = ""OSPPSVC"" wide   
+      
+     condition:   
+       all of them   
+   }"
+30345418,e7ee4311a20e943d659706796873da60bcb09589,YARA,,,"rule zhLookUp   
+   {   
+      
+     meta:   
+       author = ""Cylance""   
+       date = ""2014-12-02""   
+       description = ""http://cylance.com/opcleaver""   
+      
+     strings:   
+       $s1 = ""zhLookUp.Properties""   
+      
+     condition:   
+       all of them   
+   }"
+30345419,8c60b0ac193b9847258400b71f7a0aa5444a7d01,YARA,,,"rule NetC   
+   {   
+      
+     meta:   
+       author = ""Cylance""   
+       date = ""2014-12-02""   
+       description = ""http://cylance.com/opcleaver""   
+      
+     strings:   
+       $s1 = ""NetC.exe"" wide   
+       $s2 = ""Net Service""   
+      
+     condition:   
+       all of them   
+   }"
+30345420,c04e5505f606bfdba42a423509481be306aa0680,YARA,,,"rule csext   
+   {   
+      
+     meta:   
+       author = ""Cylance""   
+       date = ""2014-12-02""   
+       description = ""http://cylance.com/opcleaver""   
+      
+     strings:   
+       $s1 = ""COM+ System Extentions""   
+       $s2 = ""csext.exe""   
+       $s3 = ""COM_Extentions_bin""   
+      
+     condition:   
+       all of them   
+   }"
+30345421,ce1934c55a62a5faeec398bca31c0c7b836dc8ff,YARA,,,"rule OPCLEAVER_LoggerModule   
+   {   
+      
+       meta:   
+           description = ""Keylogger used by attackers in Operation Cleaver""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Cylance Inc.""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""%s-%02d%02d%02d%02d%02d.r""   
+           $s2 = ""C:\\Users\\%s\\AppData\\Cookies\\""   
+      
+       condition:   
+           all of them   
+   }"
+30345422,567fb3a9a9a3092022e870ff5466039209eb3b74,YARA,,,"rule OPCLEAVER_SmartCopy2   
+   {   
+      
+       meta:   
+           description = ""Malware or hack tool used by attackers in Operation Cleaver""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Cylance Inc.""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""SmartCopy2.Properties""   
+           $s2 = ""ZhuFrameWork""   
+      
+       condition:   
+           all of them   
+   }"
+30345423,53e73409b898f408926de44fd24a35f193cfb1f7,YARA,,,"rule OPCLEAVER_Jasus   
+   {   
+      
+       meta:   
+           description = ""ARP cache poisoner used by attackers in Operation Cleaver""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Cylance Inc.""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""pcap_dump_open""   
+           $s2 = ""Resolving IPs to poison...""   
+           $s3 = ""WARNNING: Gateway IP can not be found""   
+      
+       condition:   
+           all of them   
+   }"
+30345424,214be72aabe2b8015f03694cb2f53b275c3cd5cf,YARA,,,"rule SynFlooder   
+   {   
+      
+     meta:   
+       author = ""Cylance""   
+       date = ""2014-12-02""   
+       description = ""http://cylance.com/opcleaver""   
+      
+     strings:   
+       $s1 = ""Unable to resolve [ %s ]. ErrorCode %d""   
+       $s2 = ""your target's IP is : %s""   
+       $s3 = ""Raw TCP Socket Created successfully.""   
+      
+     condition:   
+       all of them   
+   }"
+30345425,e33d500fc2a65e85f9035e0ddbbdc049333978ad,YARA,,,"rule OPCLEAVER_CCProxy_Config   
+   {   
+      
+       meta:   
+           description = ""CCProxy config known from Operation Cleaver""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Florian Roth""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""UserName=User-001"" fullword ascii   
+           $s2 = ""Web=1"" fullword ascii   
+           $s3 = ""Mail=1"" fullword ascii   
+           $s4 = ""FTP=0"" fullword ascii   
+           $x1 = ""IPAddressLow=78.109.194.114"" fullword ascii   
+      
+       condition:   
+           all of ($s*) or $x1   
+   }"
+30345426,7bbf1d56bcd4fdb01757bcad877ad940499a2555,YARA,,,"rule OPCLEAVER_BackDoorLogger   
+   {   
+      
+       meta:   
+           description = ""Keylogger used by attackers in Operation Cleaver""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Cylance Inc.""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""BackDoorLogger""   
+           $s2 = ""zhuAddress""   
+      
+       condition:   
+           all of them   
+   }"
+30345427,ce9dc96b229b5274f626d6c7c95496f496413b42,YARA,,,"rule OPCLEAVER_pvz_out   
+   {   
+      
+       meta:   
+           description = ""Parviz tool used by attackers in Operation Cleaver""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Cylance Inc.""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""Network Connectivity Module"" wide   
+           $s2 = ""OSPPSVC"" wide   
+      
+       condition:   
+           all of them   
+   }"
+30345428,21e099b2a9a7f01e3d4f18ae98d5c5efdc3eec89,YARA,,,"rule Jasus   
+   {   
+      
+     meta:   
+       author = ""Cylance""   
+       date = ""2014-12-02""   
+       description = ""http://cylance.com/opcleaver""   
+      
+     strings:   
+       $s1 = ""pcap_dump_open""   
+       $s2 = ""Resolving IPs to poison...""   
+       $s3 = ""WARNNING: Gateway IP can not be found""   
+      
+     condition:   
+       all of them   
+   }"
+30345429,e05f6cb5e0fc074884249bc30243dfe5ff1acca3,YARA,,,"rule pvz_in   
+   {   
+      
+     meta:   
+       author = ""Cylance""   
+       date = ""2014-12-02""   
+       description = ""http://cylance.com/opcleaver""   
+      
+     strings:   
+       $s1 = ""LAST_TIME=00/00/0000:00:00PM$""   
+       $s2 = ""if %%ERRORLEVEL%% == 1 GOTO line""   
+      
+     condition:   
+       all of them   
+   }"
+30345430,e262baa35af7f9ec16d59dbad618557b47165468,YARA,,,"rule OPCLEAVER_antivirusdetector   
+   {   
+      
+       meta:   
+           description = ""Hack tool used by attackers in Operation Cleaver""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Cylance Inc.""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""getShadyProcess""   
+           $s2 = ""getSystemAntiviruses""   
+           $s3 = ""AntiVirusDetector""   
+      
+       condition:   
+           all of them   
+   }"
+30345431,86a1fc7eab2e17ec5168a5447cb8eb4f281c080f,YARA,,,"rule BackDoorLogger   
+   {   
+      
+     meta:   
+       author = ""Cylance""   
+       date = ""2014-12-02""   
+       description = ""http://cylance.com/opcleaver""   
+      
+     strings:   
+       $s1 = ""BackDoorLogger""   
+       $s2 = ""zhuAddress""   
+      
+     condition:   
+       all of them   
+   }"
+30345432,65612e632520f00eb4d0b1a5cc57b57ffdee27ca,YARA,,,"rule TinyZBot   
+   {   
+      
+     meta:   
+       author = ""Cylance""   
+       date = ""2014-12-02""   
+       description = ""http://cylance.com/opcleaver""   
+      
+     strings:   
+       $s1 = ""NetScp"" wide   
+       $s2 = ""TinyZBot.Properties.Resources.resources""   
+       $s3 = ""Aoao WaterMark""   
+       $s4 = ""Run_a_exe""   
+       $s5 = ""netscp.exe""   
+       $s6 = ""get_MainModule_WebReference_DefaultWS""   
+       $s7 = ""remove_CheckFileMD5Completed""   
+       $s8 = ""http://tempuri.org/""   
+       $s9 = ""Zhoupin_Cleaver""   
+      
+     condition:   
+       ($s1 and $s2) or ($s3 and $s4 and $s5) or ($s6 and $s7 and $s8) or ($s9)   
+   }"
+30345433,814370636138667e790e6f87864a4b5570099870,YARA,,,"rule OPCLEAVER_NetC   
+   {   
+      
+       meta:   
+           description = ""Net Crawler used by attackers in Operation Cleaver""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Cylance Inc.""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""NetC.exe"" wide   
+           $s2 = ""Net Service""   
+      
+       condition:   
+           all of them   
+   }"
+30345434,8befd724be5f89be575f905752350b56ee867105,YARA,,,"rule OPCLEAVER_wndTest   
+   {   
+      
+       meta:   
+           description = ""Backdoor used by attackers in Operation Cleaver""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Cylance Inc.""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""[Alt]"" wide   
+           $s2 = ""<< %s >>:"" wide   
+           $s3 = ""Content-Disposition: inline; comp=%s; account=%s; product=%d;""   
+      
+       condition:   
+           all of them   
+   }"
+30345435,1c1ff570c53f94e86e5b3fc9564ce4c7f69df67d,YARA,,,"rule OPCLEAVER_ShellCreator2   
+   {   
+      
+       meta:   
+           description = ""Shell Creator used by attackers in Operation Cleaver to create ASPX web shells""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Cylance Inc.""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""ShellCreator2.Properties""   
+           $s2 = ""set_IV""   
+      
+       condition:   
+           all of them   
+   }"
+30345436,6fd49ad47b940754713aa0e2de79a2a434c5c0dc,YARA,,,"rule OPCLEAVER_SynFlooder   
+   {   
+      
+       meta:   
+           description = ""Malware or hack tool used by attackers in Operation Cleaver""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Cylance Inc.""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""Unable to resolve [ %s ]. ErrorCode %d""   
+           $s2 = ""your targets IP is : %s""   
+           $s3 = ""Raw TCP Socket Created successfully.""   
+      
+       condition:   
+           all of them   
+   }"
+30345437,53a124296f61d9fa143e5dbadbfc8cff2e92b9c0,YARA,,,"rule antivirusdetector   
+   {   
+      
+     meta:   
+       author = ""Cylance""   
+       date = ""2014-12-02""   
+       description = ""http://cylance.com/opcleaver""   
+      
+       strings:   
+           $s1 = ""getShadyProcess""   
+           $s2 = ""getSystemAntiviruses""   
+           $s3 = ""AntiVirusDetector""   
+      
+       condition:   
+           all of them   
+   }"
+30345438,9290b164b4da8ae68b4b260ff2e976060de77b48,YARA,,,"rule zhmimikatz   
+   {   
+      
+     meta:   
+       author = ""Cylance""   
+       date = ""2014-12-02""   
+       description = ""http://cylance.com/opcleaver""   
+      
+     strings:   
+       $s1 = ""MimikatzRunner""   
+       $s2 = ""zhmimikatz""   
+      
+     condition:   
+       all of them   
+   }"
+30345439,c747c7ae4dc63695098151cb977642fb13be3eb0,YARA,,,"rule ShellCreator2   
+   {   
+      
+     meta:   
+       author = ""Cylance""   
+       date = ""2014-12-02""   
+       description = ""http://cylance.com/opcleaver""   
+      
+     strings:   
+       $s1 = ""ShellCreator2.Properties""   
+       $s2 = ""set_IV""   
+      
+     condition:   
+       all of them   
+   }"
+30345440,091e89e1849b09eada2f0a93a6993a2075b0a307,YARA,,,"rule SmartCopy2   
+   {   
+      
+     meta:   
+       author = ""Cylance""   
+       date = ""2014-12-02""   
+       description = ""http://cylance.com/opcleaver""   
+      
+     strings:   
+       $s1 = ""SmartCopy2.Properties""   
+       $s2 = ""ZhuFrameWork""   
+      
+     condition:   
+       all of them   
+   }"
+30345441,3f036e2b9a42be7a75f9dadcd2eefcf08b007a25,YARA,,,"rule OPCLEAVER_zhCat   
+   {   
+      
+       meta:   
+           description = ""Network tool used by Iranian hackers and used by attackers in Operation Cleaver""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Cylance Inc.""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""Mozilla/4.0 ( compatible; MSIE 7.0; AOL 8.0 )"" ascii fullword   
+           $s2 = ""ABC ( A Big Company )"" wide fullword   
+      
+       condition:   
+           all of them   
+   }"
+30345442,d8e72b8dba98edf983ea0926b3776c5f4adba6ef,YARA,,,"rule Zh0uSh311   
+   {   
+      
+     meta:   
+       author = ""Cylance""   
+       date = ""2014-12-02""   
+       description = ""http://cylance.com/opcleaver""   
+      
+     strings:   
+       $s1 = ""Zh0uSh311""   
+      
+     condition:   
+       all of them   
+   }"
+30345443,3b62196e94f333261960f2f34b44b6122bcb4b6c,YARA,,,"rule kagent   
+   {   
+      
+     meta:   
+       author = ""Cylance""   
+       date = ""2014-12-02""   
+       description = ""http://cylance.com/opcleaver""   
+      
+     strings:   
+       $s1 = ""kill command is in last machine, going back""   
+       $s2 = ""message data length in B64: %d Bytes""   
+      
+     condition:   
+       all of them   
+   }"
+30345444,880b1a95d97c1aa841486ac0a90aecf2bf37e06d,YARA,,,"rule OPCLEAVER_kagent   
+   {   
+      
+       meta:   
+           description = ""Backdoor used by attackers in Operation Cleaver""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Cylance Inc.""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""kill command is in last machine, going back""   
+           $s2 = ""message data length in B64: %d Bytes""   
+      
+       condition:   
+           all of them   
+   }"
+30345445,a271066ea88fdd6aa82f35adb04811ede85594be,YARA,,,"rule zhCat   
+   {   
+      
+     meta:   
+       author = ""Cylance""   
+       date = ""2014-12-02""   
+       description = ""http://cylance.com/opcleaver""   
+      
+     strings:   
+       $s1 = ""zhCat -l -h -tp 1234""   
+       $s2 = ""ABC ( A Big Company )"" wide   
+      
+     condition:   
+       all of them   
+   }"
+30345446,d7a3f481e45a17cf18036edb586da6c4af4de9d7,YARA,,,"rule OPCLEAVER_mimikatzWrapper   
+   {   
+      
+       meta:   
+           description = ""Mimikatz Wrapper used by attackers in Operation Cleaver""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Cylance Inc.""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""mimikatzWrapper""   
+           $s2 = ""get_mimikatz""   
+      
+       condition:   
+           all of them   
+   }"
+30345447,940081406f0f4f7242c0ae4ff992f4562d87b215,YARA,,,"rule OPCLEAVER_ZhoupinExploitCrew   
+   {   
+      
+       meta:   
+           description = ""Keywords used by attackers in Operation Cleaver""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Cylance Inc.""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""zhoupin exploit crew"" nocase   
+           $s2 = ""zhopin exploit crew"" nocase   
+      
+       condition:   
+           1 of them   
+   }"
+30345448,fb490b0f76e0382303f2768af1a50c213a5b0328,YARA,,,"rule OPCLEAVER_csext   
+   {   
+      
+       meta:   
+           description = ""Backdoor used by attackers in Operation Cleaver""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Cylance Inc.""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""COM+ System Extentions""   
+           $s2 = ""csext.exe""   
+           $s3 = ""COM_Extentions_bin""   
+      
+       condition:   
+           all of them   
+   }"
+30345449,246497edf31bd02042685803ff2dc1814b4054cd,YARA,,,"rule mimikatzWrapper : Toolkit   
+   {   
+      
+     meta:   
+       author = ""Cylance""   
+       date = ""2014-12-02""   
+       description = ""http://cylance.com/opcleaver""   
+      
+     strings:   
+       $s1 = ""mimikatzWrapper""   
+       $s2 = ""get_mimikatz""   
+      
+     condition:   
+       all of them   
+   }"
+30345450,457f1a2c29a72576e38f523413593f3ac7944d13,YARA,,,"rule OPCLEAVER_pvz_in   
+   {   
+      
+       meta:   
+           description = ""Parviz tool used by attackers in Operation Cleaver""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Cylance Inc.""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""LAST_TIME=00/00/0000:00:00PM$""   
+           $s2 = ""if %%ERRORLEVEL%% == 1 GOTO line""   
+      
+       condition:   
+           all of them   
+   }"
+30345451,1315fe47e2a326258ca2bb0139a7d13735d46fce,YARA,,,"rule OPCLEAVER_TinyZBot   
+   {   
+      
+       meta:   
+           description = ""Tiny Bot used by attackers in Operation Cleaver""   
+           reference = ""http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf""   
+           date = ""2014/12/02""   
+           author = ""Cylance Inc.""   
+           score = ""70""   
+      
+       strings:   
+           $s1 = ""NetScp"" wide   
+           $s2 = ""TinyZBot.Properties.Resources.resources""   
+           $s3 = ""Aoao WaterMark""   
+           $s4 = ""Run_a_exe""   
+           $s5 = ""netscp.exe""   
+           $s6 = ""get_MainModule_WebReference_DefaultWS""   
+           $s7 = ""remove_CheckFileMD5Completed""   
+           $s8 = ""http://tempuri.org/""   
+           $s9 = ""Zhoupin_Cleaver""   
+      
+       condition:   
+           (($s1 and $s2) or ($s3 and $s4 and $s5) or ($s6 and $s7 and $s8) or $s9)   
+   }"
+437,news-bbc.podzone.org,hostname,,,
+438,19fbd8cbfb12482e8020a887d6427315,FileHash-MD5,,,
+439,0994d9deb50352e76b0322f48ee576c6,FileHash-MD5,,,
+440,14ecd5e6fc8e501037b54ca263896a11,FileHash-MD5,,,
+441,80.248.65.183,IPv4,Expired,,
+30630016,e8260076a4d0fae2521eadc9744f135718a9bf67,YARA,,,"rule penquinTurla1 : LinuxMalware    
+   {   
+   	meta:   
+   		author = ""Alienvault Labs""   
+   		reference = ""https://securelist.com/blog/research/67962/the-penquin-turla-2/""   
+   	strings:   
+    	$elf = {7f 45}   
+   		$s1 = ""/tmp/.xdfg""   
+   		$s2 = ""Read or recive 0 status""   
+   		$s3 = ""TREX_PID=%u""   
+      
+   	condition:   
+   		$elf at 0 and all of ($s*)   
+      
+   }"
+442,sanygroup.co.uk,domain,,,
+443,haarmannsi.cz,domain,,,
+444,ecolines.es,domain,,,
+445,blackberry-support.herokuapp.com,hostname,,,
+446,e1d51aa28159c25121476ffe5f2fc692,FileHash-MD5,,,
+447,649ff144aea6796679f8f9a1e9f51479,FileHash-MD5,,,
+448,046a3e7c376ba4b6eb21846db9fc02df,FileHash-MD5,,,
+449,b0c2466feb24519c133ee04748ff293f,FileHash-MD5,,,
+450,58db8f33a9cdd321d9525d1e68c06456,FileHash-MD5,,,
+451,7c6727b173086df15aa1ca15f1572b3f,FileHash-MD5,,,
+452,f5476728deb53fe2fa98e6a33577a9da,FileHash-MD5,,,
+453,5c3de5b2762f4c5f91affaa6bcadd21b,FileHash-MD5,,,
+454,f4e15c1c2c95c651423dbb4cbe6c8fd5,FileHash-MD5,,,
+455,83b383884405190683d748f4a95f48d4,FileHash-MD5,,,
+456,488e54526aa45a47f7974b4c84c1469a,FileHash-MD5,,,
+457,80528b1c4485eb1f4a306cff768151c5,FileHash-MD5,,,
+458,b0d1e42d342e56bc0d20627a7ef1f612,FileHash-MD5,,,
+459,a6b2ce1cc02c902ba6374210faf786a3,FileHash-MD5,,,
+460,036fbc5bffd664bc369b467f9874fac4,FileHash-MD5,,,
+461,4e037e1e945e9ad4772430272512831c,FileHash-MD5,,,
+462,decf56296c50bd3ae10a49747573a346,FileHash-MD5,,,
+463,40e70f7f5d9cb1a669f8d8f306113485,FileHash-MD5,,,
+464,e211c2bad9a83a6a4247ec3959e2a730,FileHash-MD5,,,
+465,24a9bbb0d4418d97d9050a3dd085a188,FileHash-MD5,,,
+466,62fc46151cfe1e57a8fa00065bde57b0,FileHash-MD5,,,
+467,0fb60461d67cd4008e55feceeda0ee71,FileHash-MD5,,,
+468,86b2372297619b1a9d8ad5acdf1a6467,FileHash-MD5,,,
+469,dd8790455109497d49c2fa2442cf16f7,FileHash-MD5,,,
+470,43112e09240caebb3c72855c9f6fc9e5,FileHash-MD5,,,
+471,60dac48e555d139e29edaec41c85e2b4,FileHash-MD5,,,
+472,62dc87d1d6b99ae2818a34932877c0a4,FileHash-MD5,,,
+473,d171db37ef28f42740644f4028bcf727,FileHash-MD5,,,
+474,94.102.50.60,IPv4,Expired,,
+475,82.221.100.60,IPv4,Expired,,
+476,82.221.100.55,IPv4,Expired,,
+235014,6467c6df4ba4526c7f7a7bc950bd47eb,FileHash-MD5,,,
+657,e904bf93403c0fb08b9683a9e858c73e,FileHash-MD5,,,
+19844,b80aa583591eaf758fd95ab4ea7afe39,FileHash-MD5,,,
+660,760c35a80d758f032d02cf4db12d3e55,FileHash-MD5,,,
+636,d1c27ee7ce18675974edf42d4eea25c6,FileHash-MD5,,,
+662,217.96.33.164,IPv4,Expired,,
+663,88.53.215.64,IPv4,Expired,,
+664,208.105.226.235,IPv4,Expired,,
+665,212.31.102.100,IPv4,Expired,,
+666,203.131.222.102,IPv4,Expired,,
+667,200.87.126.116,IPv4,Expired,,
+668,58.185.154.99,IPv4,Expired,,
+477,9thegamejuststarted14k9.com,domain,,,
+478,nutqlfkq123a10.com,domain,,,
+479,a2kiaymoster14902.com,domain,,,
+43710461,http://54.191.142.124/zpm37.exe,URL,,,
+43710462,http://121.11.83.7/and40a70.exe,URL,,,
+43710463,http://155.133.18.45/141a1.exe,URL,,,
+43710464,http://155.133.18.45/62.exe,URL,,,
+43710465,http://121.14.212.184/ng33.exe,URL,,,
+43710466,http://155.133.18.45/109a7.exe,URL,,,
+43710467,http://117.21.191.47/and40a37.exe,URL,,,
+43710468,http://119.1.109.44/and33.exe,URL,,,
+43710469,http://217.23.6.112/330740x.exe,URL,,,
+43710470,http://155.133.18.45/37a1.exe,URL,,,
+43710471,http://121.14.212.184/ng40a54.exe,URL,,,
+43710472,http://54.69.90.62/330740a71.exe,URL,,,
+43710473,http://121.11.83.7/ng40a71.exe,URL,,,
+43710474,http://121.11.83.7/bet40a71.exe,URL,,,
+43710475,http://54.69.90.62/bnew40a71.exe,URL,,,
+43710476,http://121.14.212.184/and37.exe,URL,,,
+43710477,http://117.21.191.47/betw9.exe,URL,,,
+43710478,http://54.68.121.73/and40a37.exe,URL,,,
+43710479,http://119.1.109.44/and37.exe,URL,,,
+43710480,http://54.69.90.62/bnew40a85.exe,URL,,,
+43710481,http://121.14.212.184/and40a54.exe,URL,,,
+43710482,http://217.23.6.112/98.exe,URL,,,
+43710483,http://54.69.90.62/330740a91.exe,URL,,,
+43710484,http://77.87.79.128/37extra.exe,URL,,,
+43710485,http://54.68.121.73/and37.exe,URL,,,
+43710486,http://121.14.212.184/nut40a52.exe,URL,,,
+43710487,http://121.11.83.7/nut40a71.exe,URL,,,
+43710488,http://54.69.90.62/dqnew40a81.exe,URL,,,
+43710489,http://54.69.90.62/and40a90.exe,URL,,,
+43710490,http://155.133.18.45/51a5.exe,URL,,,
+43710491,http://121.14.212.184/zpm39a.exe,URL,,,
+43710492,http://54.191.142.124/bet4.exe,URL,,,
+43710493,http://155.133.18.45/nut40a52.exe,URL,,,
+43710494,http://158.255.1.241/ng38a.exe,URL,,,
+514,n3utrino.blog.com,hostname,,,
+515,13475d0fdba8dc7a648b57b10e8296d5,FileHash-MD5,,,
+516,399357dac81db1ae19c69e8a2b7e5311,FileHash-MD5,,,
+517,fe8c978f05f3a83af7c8905f94f71213,FileHash-MD5,,,
+518,9cf7d079713fdf715131e16b144d3f52,FileHash-MD5,,,
+519,4e347b4bb29e39a97c5803db1ee53321,FileHash-MD5,,,
+520,43ff7c660e83eeff9a7db4abf0ceab04,FileHash-MD5,,,
+521,f220f0a48885bafc29b31fb7228cc4bb,FileHash-MD5,,,
+522,036eb11a5751c77bc65006769921c8e5,FileHash-MD5,,,
+523,6fe50af0b54ed30227099ea6b9e7178b,FileHash-MD5,,,
+524,463f7191363d0391add327c1270d7fe6,FileHash-MD5,,,
+525,692d4fc093dc013fa7d86bee7b85c0f9,FileHash-MD5,,,
+526,c93f36300bb882b4671b7ef0a8bd4fba,FileHash-MD5,,,
+527,52daa66602eb4a3aa8effd3a287efbf7,FileHash-MD5,,,
+528,1b24669aa9245cef2358a9d76dab97be,FileHash-MD5,,,
+529,c1fa3e4ee1e2e5b088bc657b0b5a3b8e,FileHash-MD5,,,
+530,2983d957d4cdd9293682cfaf21147d07,FileHash-MD5,,,
+531,9e8b203f487dfa85dd47e32b3d24e24e,FileHash-MD5,,,
+532,7599016887b4d6c0e3bc2ecda983161f,FileHash-MD5,,,
+533,b62391f3f7cbdea02763614f60f3930f,FileHash-MD5,,,
+534,9b2a41b9bc48ccff04effe10bb0fb839,FileHash-MD5,,,
+535,e19f755461a13879499bd1e8e7471807,FileHash-MD5,,,
+536,72380a9fcf7486bb731606d4f4c13f27,FileHash-MD5,,,
+537,4f0f11c52935735aa0e65f04b95ed208,FileHash-MD5,,,
+538,b21e4c8f73151d7b0294a3974fe44421,FileHash-MD5,,,
+539,5e0faee1b5962f3b0e7ef0cd07b07d90,FileHash-MD5,,,
+540,5923da4653b7fcb4ee9062367873a2ed,FileHash-MD5,,,
+541,87595d36a05bbbfdab643e78f1b1dad4,FileHash-MD5,,,
+542,851019d9ac5c3c1853a62535bb42fe25,FileHash-MD5,,,
+543,a87c5b6a588ef4b351ce1a3a0fe2b035e685e96c,FileHash-SHA1,,,
+544,de6a4d53b5265f8cddf08271d17d845f58107e82,FileHash-SHA1,,,
+545,c6966d9557a9d5ffbbcd7866d45eddff30a9fd99,FileHash-SHA1,,,
+546,feed5337c0a3b1fd55c78a976fbd5388512a22e1,FileHash-SHA1,,,
+547,121.11.83.7,IPv4,Expired,,
+548,155.133.18.44,IPv4,Expired,,
+549,155.133.18.45,IPv4,Expired,,
+550,116.255.202.74,IPv4,Expired,,
+551,77.87.79.128,IPv4,Expired,,
+552,121.14.212.248,IPv4,Expired,,
+553,54.69.90.62,IPv4,Expired,,
+554,217.23.6.112,IPv4,Expired,,
+555,121.61.118.140,IPv4,Expired,,
+556,54.191.142.124,IPv4,Expired,,
+557,117.21.191.47,IPv4,Expired,,
+558,158.255.1.241,IPv4,Expired,,
+559,121.14.212.184,IPv4,Expired,,
+560,54.68.121.73,IPv4,Expired,,
+561,54.68.194.154,IPv4,Expired,,
+562,119.1.109.44,IPv4,Expired,,
+563,n3utrino@xmpp.jp,email,,,
+564,n3utrino@kaddafi.me,email,,,
+565,a8377c5a7c390331b15c1df94fa745e38a.to,domain,,,
+566,z376dfe4955a257a78944864dd0158d172.ws,domain,,,
+567,ba3be71036fc2c06d603a2b17d41ffe71a.in,domain,,,
+568,y3aaa48a7056d7075c3760cdbd90a75b8f.cc,domain,,,
+569,c9cca04cec2588918820cf33ba4337cca8.hk,domain,,,
+570,dec4f75e53d7202136164e2b26456dabdf.cn,domain,,,
+571,e3d68349d47efa0d5a9a92b1239bc4d48c.tk,domain,,,
+572,f85db5ce8675f53b61f00ca0e822a33312.so,domain,,,
+573,2d8923ef39b1fa0a091965735f3490f3,FileHash-MD5,,,
+574,1a52993e4546c3d6adad037af74ce2a8,FileHash-MD5,,,
+575,3597f17748f9bb7d008840a4b1391582,FileHash-MD5,,,
+576,156f730bbb6b6cada4ef89e22ddc68ab,FileHash-MD5,,,
+577,b5b3af636f545da62f87c2773aa99016,FileHash-MD5,,,
+578,c3980a6228b68f88a0718de7a0362116,FileHash-MD5,,,
+579,c6315a09e06e2ba775e5be0979d23755,FileHash-MD5,,,
+580,0a77a39285d6bc816791320bb13408e5,FileHash-MD5,,,
+581,32d32802a97b9c24e1eafcea6af52440,FileHash-MD5,,,
+582,ec525c578d14a15d8d913e83ec5c557b,FileHash-MD5,,,
+583,109.228.17.158,IPv4,Expired,,
+584,37.59.2.42,IPv4,Expired,,
+585,109.228.17.152,IPv4,Expired,,
+586,109.228.17.155,IPv4,Expired,,
+587,217.172.179.9,IPv4,Expired,,
+588,80.248.224.75,IPv4,Expired,,
+589,85.25.145.179,IPv4,Expired,,
+590,176.114.0.58,IPv4,Expired,,
+591,166.78.103.85,IPv4,Expired,,
+592,203.183.172.196,IPv4,Expired,,
+593,85.25.134.53,IPv4,Expired,,
+594,212.56.214.154,IPv4,Expired,,
+595,217.172.181.164,IPv4,Expired,,
+596,94.23.196.90,IPv4,Expired,,
+597,193.203.50.69,IPv4,Expired,,
+598,217.172.184.75,IPv4,Expired,,
+599,212.56.214.130,IPv4,Expired,,
+600,93.190.139.178,IPv4,Expired,,
+601,217.23.8.68,IPv4,Expired,,
+602,213.239.209.196,IPv4,Expired,,
+603,5.79.86.19,IPv4,Expired,,
+604,202.153.35.133,IPv4,Expired,,
+605,94.23.61.172,IPv4,Expired,,
+606,193.203.50.17,IPv4,Expired,,
+607,85.25.138.12,IPv4,Expired,,
+625,000083c40c85c075088d85d4edffffeb498d8564feffff68040100005053ff15,FileHash-SHA256,,,
+626,593bc3597430408bc83818740e80393b75048819eb0141381975f26a0a5350e8,FileHash-SHA256,,,
+627,93bc819011b2b3da8487f964f29eb934,FileHash-MD5,,,
+628,7759c7d2c6d49c8b0591a3a7270a44da,FileHash-MD5,,,
+629,0bb82def661dd013a1866f779b455cf3,FileHash-MD5,,,
+630,eb435e86604abced7c4a2b11c4637a52,FileHash-MD5,,,
+631,a385900a36cad1c6a2022f31e8aca9f7,FileHash-MD5,,,
+632,4ef0ad7ad4fe3ef4fb3db02cd82bface,FileHash-MD5,,,
+633,40adcd738c5bdc5e1cc3ab9a48b3df39,FileHash-MD5,,,
+634,11c9374cea03c3b2ca190b9a0fd2816b,FileHash-MD5,,,
+635,25fb1e131f282fa25a4b0dec6007a0ce,FileHash-MD5,,,
+637,e509881b34a86a4e2b24449cf386af6a,FileHash-MD5,,,
+638,6aeac618e29980b69721158044c2e544,FileHash-MD5,,,
+639,86e212b7fc20fc406c692400294073ff,FileHash-MD5,,,
+640,7e48d5ba6e6314c46550ad226f2b3c67,FileHash-MD5,,,
+641,74982cd1f3be3d0acfb0e6df22dbcd67,FileHash-MD5,,,
+642,f57e6156907dc0f6f4c9e2c5a792df48,FileHash-MD5,,,
+643,b8ffff8b57586d24e1e65cd0b0ad9173,FileHash-MD5,,,
+644,68a26b8eaf2011f16a58e4554ea576a1,FileHash-MD5,,,
+645,ed7a9c6d9fc664afe2de2dd165a9338c,FileHash-MD5,,,
+646,e1864a55d5ccb76af4bf7a0ae16279ba,FileHash-MD5,,,
+647,8dec36d7f5e6cbd5e06775771351c54e,FileHash-MD5,,,
+648,9761dd113e7e6673b94ab4b3ad552086,FileHash-MD5,,,
+649,838e57492f632da79dcd5aa47b23f8a9,FileHash-MD5,,,
+650,734740b16053ccc555686814a93dfbeb,FileHash-MD5,,,
+651,0a87c6f29f34a09acecce7f516cc7fdb,FileHash-MD5,,,
+652,3b9da603992d8001c1322474aac25f87,FileHash-MD5,,,
+653,a565e8c853b8325ad98f1fac9c40fb88,FileHash-MD5,,,
+654,7bea4323807f7e8cf53776e24cbd71f1,FileHash-MD5,,,
+655,194ae075bf53aa4c83e175d4fa1b9d89,FileHash-MD5,,,
+656,f6f48551d7723d87daeef2e840ae008f,FileHash-MD5,,,
+658,c905a30badb458655009799b1274205c,FileHash-MD5,,,
+659,9ab7f2bf638c9d911c2c742a574db89e,FileHash-MD5,,,
+661,7fb0441a08690d4530d2275d4d7eb351,FileHash-MD5,,,
+670,mcymbethel.com.ar/modules/mod_ariimageslider/1,URL,,,
+671,sparkledesign.ro/1.php?r,URL,,,
+672,climatechange.mobi/images/1.php?r,URL,,,
+673,youreverlastingmemories.co.uk/1.php?r,URL,,,
+674,couponshare.me/1.php?r,URL,,,
+675,treasurething.com/wp-includes/pomo/1.php?r,URL,,,
+676,thebestcookbooks.co.uk/wp-content/plugins/1.php?r,URL,,,
+677,cartorioalbuquerque.com.br/images/1.php?r,URL,,,
+678,core.is/1.php?r,URL,,,
+679,bankruptcy-software.com/wp-content/themes/classic/1.php?r,URL,,,
+680,blackwellanddenton.com/components/com_contact/1,URL,,,
+681,mitoyotaseagarrota.com/components/com_banners/1,URL,,,
+682,alzina.cat/1.php?r,URL,,,
+683,blog.ridici-jednotky.cz/wp-content/plugins/simple4us/1.php?r,URL,,,
+684,thefoodstudio.co.nz/wp-content/themes/food-cook/1.php?r,URL,,,
+685,architecture.web.auth.gr/1.php?r,URL,,,
+686,merklab.eu/1.php?r,URL,,,
+687,matthewkarant.com/wp-content/themes/twentynine/1.php?r,URL,,,
+688,turbomarketingteam.com/1.php?r,URL,,,
+689,odelia-coaching.co.il/wp-content/plugins/google-sitemap-generator/1.php?r,URL,,,
+690,salihajszalon.hu/1.php?r,URL,,,
+691,prodvizhenie-sajta.com/images/1.php?r,URL,,,
+692,xhmeiastokyma.gr/1.php?r,URL,,,
+693,sonicboommusic.com.au/components/com_banners/1,URL,,,
+694,dlaciebie.org/wp-admin/1.php?r,URL,,,
+695,linkleads.vn/1.php?r,URL,,,
+696,kba1f9684c70.nazwa.pl/images/1.php?r,URL,,,
+697,geototal.az/en/ru/engine/editor/scripts/common/codemirror/mode/xml/1.php?r,URL,,,
+698,osp.ruszow.liu.pl/images/1.php?r,URL,,,
+699,bernie.jshall.net/wp-content/themes/twentytwelve/1.php?r,URL,,,
+700,blog.topdealslondon.com/wp-content/uploads/1.php?r,URL,,,
+701,pms.isovn.net/images/1.php?r,URL,,,
+702,angeladoesfood.com/wp-admin/1.php?r,URL,,,
+703,dannygill.co.uk/wp-content/plugins/simple4us/1.php?r,URL,,,
+704,beta.pescariusports.ro/images/1.php?r,URL,,,
+705,thietkekientruca4.vn/1.php?r,URL,,,
+706,monitoring.sensomedia.hu/1.php?r,URL,,,
+707,redmine.sensomedia.hu/1.php?r,URL,,,
+708,tsv-penzberg.de/wp-admin/1.php?r,URL,,,
+709,lionel.my/wp-content/plugins/akismet/1.php?r,URL,,,
+710,longboardsicecream.com/wp-content/plugins/1.php?r,URL,,,
+711,altero.be/1.php?r,URL,,,
+712,tusengangerstarkare.ingelaclarin.se/wp-admin/1.php?r,URL,,,
+713,m11.mobi/images/1.php?r,URL,,,
+714,livedoor.eu/1.php?r,URL,,,
+715,mlmassagetherapy.com.au/wp-content/uploads/1.php?r,URL,,,
+716,apsmiles.com/wp-content/themes/rfx/1.php?r,URL,,,
+717,ludovicharollais.org/wp-admin/1.php?r,URL,,,
+718,twobyones.com/1.php?r,URL,,,
+719,augustgifford.com/wp-admin/1.php?r,URL,,,
+720,newwww.r11mis.be/images/1.php?r,URL,,,
+721,airlessspraysupplies.com/wp-includes/1.php?r,URL,,,
+722,tusengangerstarkare.ingelaclarin.se,hostname,,,
+723,o3qz25zwu4or5mak.tor2web.org,hostname,,,
+724,o3qz25zwu4or5mak.tor2web.ru,hostname,,,
+737,1159fe7ec4d0b2cfde57dfb28b98f0c9,FileHash-MD5,,,
+738,8f00cfdf067b01462670212ba5874cdb,FileHash-MD5,,,
+739,038710b2029046c39ca4082e2c34f9b3,FileHash-MD5,,,
+740,93babef06bfd93bcbb5065c445fb57d4,FileHash-MD5,,,
+741,bea9be813bb7df579d5be3e4543dc6a4,FileHash-MD5,,,
+742,2f225283c66032c9f7dcb44f42697246,FileHash-MD5,,,
+743,6bb3b23ff3e736d499775120aa8d6ae2,FileHash-MD5,,,
+744,6696527bfda97b1473d1047117ded8d6,FileHash-MD5,,,
+745,ec35acdbe331c73e5e6883ebc08f896d,FileHash-MD5,,,
+746,public-dns.us,domain,,,
+747,financialnewsonline.pw,domain,,,
+748,blizko.org,domain,,,
+749,paradise-plaza.com,domain,,,
+750,ddnservice10.ru,domain,,,
+751,mind-finder.com,domain,,,
+752,update-java.net,domain,,,
+753,adguard.name,domain,,,
+754,publics-dns.com,domain,,,
+755,freemsk-dns.com,domain,,,
+756,blizko.net,domain,,,
+757,veslike.com,domain,,,
+758,great-codes.com,domain,,,
+759,zwgukemphizgnt.com,domain,,,
+760,coral-trevel.com,domain,,,
+761,worldnewsonline.pw,domain,,,
+762,comixed.org,domain,,,
+763,traider-pro.com,domain,,,
+764,ddnservice11.ru,domain,,,
+57496707,http://ddnservice11.ru/and/jopagate.php,URL,,,
+57496708,http://ddnservice10.ru/and/jopagate.php,URL,,,
+57496709,http://ZwGuKEMphiZgNT.com,URL,,,
+768,de9f4cbb90c994522553ab40ac2d5409,FileHash-MD5,,,
+769,4cf26f8e2f6864c4a8aaa7f92e54e801,FileHash-MD5,,,
+770,a4b053d9ec7d5edb207c208bfbe396ec,FileHash-MD5,,,
+771,ac5d3fc9da12255759a4a7e4eb3d63e7,FileHash-MD5,,,
+772,934e1055b171df0d3e28be9831eb7770,FileHash-MD5,,,
+773,5d1ae2391dfb02e573331b3946f0c314,FileHash-MD5,,,
+774,8dd78371b2d178fb8c8a9b1012d7e985,FileHash-MD5,,,
+775,e9fc0f53c7c0223de20f1776c53d3673,FileHash-MD5,,,
+776,c687867e2c92448992c0fd00a2468752,FileHash-MD5,,,
+777,9d718e86cacffa39edafbf9c1ebc9754,FileHash-MD5,,,
+778,3dc8c4af51c8c367fbe7c7feef4f6744,FileHash-MD5,,,
+779,17984eb3926bf99f0ccb367f4fba12e3,FileHash-MD5,,,
+780,3e90bf845922cf1bf5305e6fdcc14e46,FileHash-MD5,,,
+781,8fa296efaf87ff4d9179283d42372c52,FileHash-MD5,,,
+782,09c8631c2ba74a92defb31040fe2c45a,FileHash-MD5,,,
+783,a1979aa159e0c54212122fd8acb24383,FileHash-MD5,,,
+784,cc294f8727addc5d363bb23e10be4af2,FileHash-MD5,,,
+785,8646e3d8ffffe854d5f9145c0ab413f6,FileHash-MD5,,,
+786,b63af72039e4fb2acd0440b03268b404,FileHash-MD5,,,
+787,aa36ba9f4de5892f1dd427b7b2100b06,FileHash-MD5,,,
+788,1f80a57a3b99eeb8016339991a27593f,FileHash-MD5,,,
+789,fc6d9f538cdae19c8c3c662e890af979,FileHash-MD5,,,
+790,d1de522652e129c37759158c14d48795,FileHash-MD5,,,
+791,0ad4892ead67e65ec3dd4c978fce7d92,FileHash-MD5,,,
+792,2b817bd8195dc7f56500f38a0c740cef,FileHash-MD5,,,
+793,e464d4804d36fddf0287877d66d5037a,FileHash-MD5,,,
+794,86bd7f72a495a22b22070c068b591df8,FileHash-MD5,,,
+795,94666bca3fe81831a23f60c407840408,FileHash-MD5,,,
+796,31.131.17.125,IPv4,Expired,,
+797,146.185.220.97,IPv4,Expired,,
+798,216.170.117.88,IPv4,Expired,,
+799,5.199.169.188,IPv4,Expired,,
+800,188.138.16.214,IPv4,Expired,,
+801,65.19.141.199,IPv4,Expired,,
+802,144.76.215.219,IPv4,Expired,,
+803,185.10.56.59,IPv4,Expired,,
+804,37.235.54.48,IPv4,Expired,,
+805,5.1.83.133,IPv4,Expired,,
+806,185.10.58.175,IPv4,Expired,,
+807,91.194.254.93,IPv4,Expired,,
+808,5.101.146.184,IPv4,Expired,,
+809,91.194.254.90,IPv4,Expired,,
+810,146.185.220.200,IPv4,Expired,,
+811,87.98.153.34,IPv4,Expired,,
+812,91.194.254.94,IPv4,Expired,,
+813,CVE-2012-0158,CVE,,,
+814,CVE-2012-2539,CVE,,,
+815,f68a0a3784a7edfc60ad9333ec209cbf,FileHash-MD5,,,
+816,d0c3f4c9896d41a7c42737134ffb4c2e,FileHash-MD5,,,
+817,395461588e273fab5734db56fa18051b,FileHash-MD5,,,
+818,48573a150562c57742230583456b4c02,FileHash-MD5,,,
+819,da976a502a3afc4ba63611d47c625738,FileHash-MD5,,,
+820,50d3f1708293f40a2c0c1f151c2c426f,FileHash-MD5,,,
+821,177ef7faab3688572403730171ffb9c4,FileHash-MD5,,,
+822,ee41e7c97f417b07177ea420afe510a1,FileHash-MD5,,,
+823,4bf2218eb068385ca1bfff8d609c0104,FileHash-MD5,,,
+824,266cfe755a0a66776df9fd8cd2fee1f1,FileHash-MD5,,,
+825,916be1b609ed3dc80e5039a1d8102e82,FileHash-MD5,,,
+826,f89a4d4ae5cca6d69a5256c96111e707,FileHash-MD5,,,
+827,5a009a0d0c5ecaac1407fb32ee1c8172,FileHash-MD5,,,
+828,c222199c9a7eb0d162d5e96955739447,FileHash-MD5,,,
+829,f8547010eb4238f8fb76f4e8a756e36d,FileHash-MD5,,,
+830,08273c8a873c5925ae1563543af3715c,FileHash-MD5,,,
+831,393bd2fd420eecf2d4ca9d61df75ff0c,FileHash-MD5,,,
+832,08e424ac42e6efa361eccefdf3c13b21,FileHash-MD5,,,
+833,01c9cebbc39e273ac1f5af8b629a7327,FileHash-MD5,,,
+834,5af0cbc18c6f8ed4fd1a3f68961f5452,FileHash-MD5,,,
+835,271a5f526a638a9ae712e6a5a64f3106,FileHash-MD5,,,
+836,0b0e2c4789b895e8ac44b6ada284aec1,FileHash-MD5,,,
+837,83.170.33.60,IPv4,Expired,,
+838,83.170.43.67,IPv4,Expired,,
+839,83.170.33.37,IPv4,Expired,,
+840,84.11.75.220,IPv4,Expired,,
+841,83.170.33.80,IPv4,Expired,,
+608,7ad1bef0ba61dbed98d76d4207676d08c893fc13,FileHash-SHA1,,,
+609,d433f281cf56015941a1c2cb87066ca62ea1db37,FileHash-SHA1,,,
+610,241075fc1493172c47d881bcbfbf21cfa4daa42d,FileHash-SHA1,,,
+611,c86b13378ba2a41684e1f93b4c20e05fc5d3d5a3,FileHash-SHA1,,,
+612,51ac683df63ff71a0003ca17e640bbeaaa14d0aa,FileHash-SHA1,,,
+613,b491c14d8cfb48636f6095b7b16555e9a575d57f,FileHash-SHA1,,,
+614,82448eb23ea9eb3939b6f24df46789bf7f2d43e3,FileHash-SHA1,,,
+842,aoemvp.com,domain,,,
+843,42b76c0503a6bf21f1ea86e0b14d67ea,FileHash-MD5,,,
+844,cff25fe24a90ef63eaa168c07008c2bb,FileHash-MD5,,,
+845,a6a18c846e5179259eba9de238f67e41,FileHash-MD5,,,
+846,ad17eff26994df824be36db246c8fb6a,FileHash-MD5,,,
+847,f66b64ef984ac46ac7395358059979bc,FileHash-MD5,,,
+848,279ef79f904476ba0f9f44c87358bb1f,FileHash-MD5,,,
+849,55f84d88d84c221437cd23cdbc541d2e,FileHash-MD5,,,
+850,ec532bbe9d0882d403473102e9724557,FileHash-MD5,,,
+851,efd9dc39682312d6576468f5c0eb6236,FileHash-MD5,,,
+852,45.64.74.101,IPv4,Expired,,
+853,103.229.127.104,IPv4,Expired,,
+854,zhuksok@gmail.com,email,,,
+855,lim.kiu@hotmail.com,email,,,
+856,c.aoemvp.com,hostname,,,
+30285359,003b258e5799ba416dda06ef49f8b38f2fd4142e,YARA,,,"rule apt_c16_win64_dropper   
+   {   
+      
+       meta:   
+           author = ""@dragonthreatlab""   
+           date = ""2015/01/11""   
+           description = ""APT malware used to drop PcClient RAT""   
+           reference = ""http://blog.dragonthreatlabs.com/2015/01/dtl-12012015-01-hong-kong-swc-attack.html""   
+      
+       strings:   
+           $mz = { 4D 5A }   
+           $str1 = ""clbcaiq.dll"" ascii   
+           $str2 = ""profapi_104"" ascii   
+           $str3 = ""\\Microsoft\\wuauclt\\wuauclt.dat"" ascii   
+           $str4 = { 0F B6 0A 48 FF C2 80 E9 03 80 F1 03 49 FF C8 88 4A FF 75 EC }   
+      
+       condition:   
+           $mz at 0 and all of ($str*)   
+   }"
+30285360,dd8eb52c9a2c81612f284d72f17f522a946067eb,YARA,,,"rule apt_c16_win_swisyn   
+   {   
+      
+     meta:   
+       author = ""@dragonthreatlab""   
+       md5 = ""a6a18c846e5179259eba9de238f67e41""   
+       description = ""File matching the md5 above tends to only live in memory, hence the lack of MZ header check.""   
+       date = ""2015/01/11""   
+       reference = ""http://blog.dragonthreatlabs.com/2015/01/dtl-12012015-01-hong-kong-swc-attack.html""   
+      
+     strings:   
+       $mz = {4D 5A}   
+       $str1 = ""/ShowWU"" ascii   
+       $str2 = ""IsWow64Process""   
+       $str3 = ""regsvr32 ""   
+       $str4 = {8A 11 2A 55 FC 8B 45 08 88 10 8B 4D 08 8A 11 32 55 FC 8B 45 08 88 10}   
+      
+     condition:   
+       $mz at 0 and all of ($str*)   
+   }"
+30285361,c4f30302edd977741927cce4a946be55cac91ef2,YARA,,,"rule apt_c16_win_memory_pcclient   
+   {   
+      
+     meta:   
+       author = ""@dragonthreatlab""   
+       md5 = ""ec532bbe9d0882d403473102e9724557""   
+       description = ""File matching the md5 above tends to only live in memory, hence the lack of MZ header check.""   
+       date = ""2015/01/11""   
+       reference = ""http://blog.dragonthreatlabs.com/2015/01/dtl-12012015-01-hong-kong-swc-attack.html""   
+      
+     strings:   
+       $str1 = ""Kill You"" ascii   
+       $str2 = ""%4d-%02d-%02d %02d:%02d:%02d"" ascii   
+       $str3 = ""%4.2f  KB"" ascii   
+       $encodefunc = {8A 08 32 CA 02 CA 88 08 40 4E 75 F4}   
+      
+     condition:   
+       all of them   
+   }"
+30285362,e5120d2f7a15fbd4fc05250d24de7b7871098b8d,YARA,,,"rule apt_c16_win_wateringhole   
+   {   
+      
+     meta:   
+       author = ""@dragonthreatlab""   
+       description = ""Detects code from APT wateringhole""   
+       date = ""2015/01/11""   
+       reference = ""http://blog.dragonthreatlabs.com/2015/01/dtl-12012015-01-hong-kong-swc-attack.html""   
+      
+     strings:   
+       $str1 = ""function runmumaa()""   
+       $str2 = ""Invoke-Expression $(New-Object IO.StreamReader ($(New-Object IO.Compression.DeflateStream ($(New-Object IO.MemoryStream (,$([Convert]::FromBase64String(""   
+       $str3 = ""function MoSaklgEs7(k)""   
+      
+     condition:   
+       any of ($str*)   
+   }"
+30285363,f50d46712b7c6b773389d7a0c816a04dc9a57a34,YARA,,,"rule apt_c16_win32_dropper   
+   {   
+      
+     meta:   
+       author = ""@dragonthreatlab""   
+       md5 = ""ad17eff26994df824be36db246c8fb6a""   
+       description = ""APT malware used to drop PcClient RAT""   
+       date = ""2015/01/11""   
+       reference = ""http://blog.dragonthreatlabs.com/2015/01/dtl-12012015-01-hong-kong-swc-attack.html""   
+      
+     strings:   
+       $mz = {4D 5A}   
+       $str1 = ""clbcaiq.dll"" ascii   
+       $str2 = ""profapi_104"" ascii   
+       $str3 = ""/ShowWU"" ascii   
+       $str4 = ""Software\\Microsoft\\Windows\\CurrentVersion\\"" ascii   
+       $str5 = {8A 08 2A CA 32 CA 88 08 40 4E 75 F4 5E}   
+      
+     condition:   
+       $mz at 0 and all of ($str*)   
+   }"
+30285364,0f8bbd6b5687e26ae9bbdfacae4c0d79f4503d10,YARA,,,"rule apt_c16_win_disk_pcclient   
+   {   
+      
+     meta:   
+       author = ""@dragonthreatlab""   
+       md5 = ""55f84d88d84c221437cd23cdbc541d2e""   
+       description = ""Encoded version of pcclient found on disk""   
+       date = ""2015/01/11""   
+       reference = ""http://blog.dragonthreatlabs.com/2015/01/dtl-12012015-01-hong-kong-swc-attack.html""   
+      
+     strings:   
+       $header = {51 5C 96 06 03 06 06 06 0A 06 06 06 FF FF 06 06 BE 06 06 06 06 06 06 06 46 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 EE 06 06 06 10 1F BC 10 06 BA 0D D1 25 BE 05 52 D1 25 5A 6E 6D 73 26 76 74 6F 67 74 65 71 26 63 65 70 70 6F 7A 26 64 69 26 74 79 70 26 6D 70 26 4A 4F 53 26 71 6F 6A 69 30 11 11 0C 2A 06 06 06 06 06 06 06 73 43 96 1B 37 24 00 4E 37 24 00 4E 37 24 00 4E BA 40 F6 4E 39 24 00 4E 5E 41 FA 4E 33 24 00 4E 5E 41 FC 4E 39 24 00 4E 37 24 FF 4E 0D 24 00 4E FA 31 A3 4E 40 24 00 4E DF 41 F9 4E 36 24 00 4E F6 2A FE 4E 38 24 00 4E DF 41 FC 4E 38 24 00 4E 54 6D 63 6E 37 24 00 4E 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 56 49 06 06 52 05 09 06 5D 87 8C 5A 06 06 06 06 06 06 06 06 E6 06 10 25 0B 05 08 06 06 1C 06 06 06 1A 06 06 06 06 06 06 E5 27 06 06 06 16 06 06 06 36 06 06 06 06 06 16 06 16 06 06 06 04 06 06 0A 06 06 06 06 06 06 06 0A 06 06 06 06 06 06 06 06 76 06 06 06 0A 06 06 06 06 06 06 04 06 06 06 06 06 16 06 06 16 06 06}   
+      
+     condition:   
+       $header at 0   
+   }"
+58345234,http://121.12.173.173:9521,URL,,,
+13,aa.gm352.com,hostname,,,
+14,121.12.173.173,IPv4,Expired,,
+858,thejoe.publicvm.com,hostname,,,
+859,31.9.48.80,IPv4,Expired,,
+860,31.8.48.7,IPv4,Expired,,
+861,31.9.48.78,IPv4,Expired,,
+862,31.9.48.146,IPv4,Expired,,
+863,31.9.48.119,IPv4,Expired,,
+864,2e07e8622b4e997f6543fc0497452dad,FileHash-MD5,,,
+865,abf3cfecd2e194961fc97dac34f57b24,FileHash-MD5,,,
+866,6379afd35285e16df4cb81803fde382c,FileHash-MD5,,,
+867,f62cfd2484ff8c5b1a4751366e914613,FileHash-MD5,,,
+868,a238f8ab946516b6153816c5fb4307be,FileHash-MD5,,,
+869,cc694b1f8f0cd901f65856e419233044,FileHash-MD5,,,
+870,89e6ae33b170ee712b47449bbbd84784,FileHash-MD5,,,
+871,d6ab8ca6406fefe29e91c0604c812ff9,FileHash-MD5,,,
+872,efdaa73e0ac1b045d5f2214cadd77f09,FileHash-MD5,,,
+873,012f25d09fd53aeeddc11c23902770a7,FileHash-MD5,,,
+874,dc6166005db7487c9a8b32d938fec846,FileHash-MD5,,,
+875,39d0d7e6880652e58b2d4d6e50ca084c,FileHash-MD5,,,
+876,62023eb959a79bbdecd5aa167b51541f,FileHash-MD5,,,
+877,ad9a18e1db0b43cb38da786eb3bf7c00,FileHash-MD5,,,
+878,www.ndcinformation.acmetoy.com,hostname,,,
+879,www.service.authorizeddns.net,hostname,,,
+880,www.text-first.trickip.org,hostname,,,
+881,newoutlook.darktech.org,hostname,,,
+882,rubberduck.gotgeeks.com,hostname,,,
+883,coastnews.darktech.org,hostname,,,
+884,jingnan88.chatnook.com,hostname,,,
+885,blackblog.chatnook.com,hostname,,,
+886,autocar.serveuser.com,hostname,,,
+887,apple.dynamic-dns.net,hostname,,,
+888,pricetag.deaftone.com,hostname,,,
+889,newdyndns.scieron.com,hostname,,,
+890,will-smith.dtdns.net,hostname,,,
+891,markshell.etowns.net,hostname,,,
+892,text-first.flnet.org,hostname,,,
+893,yellowblog.flnet.org,hostname,,,
+894,football.mrbasic.com,hostname,,,
+895,photocard.4irc.com,hostname,,,
+896,dynamic.ddns.mobi,hostname,,,
+897,ls910329.my03.com,hostname,,,
+898,imirnov.ddns.info,hostname,,,
+899,logoff.ddns.info,hostname,,,
+900,bulldog.toh.info,hostname,,,
+901,cew58e.xxxy.info,hostname,,,
+902,shutdown.25u.com,hostname,,,
+903,mydear.ddns.info,hostname,,,
+904,nazgul.zyns.com,hostname,,,
+905,sskill.b0ne.com,hostname,,,
+906,expert.4irc.com,hostname,,,
+907,logoff.25u.com,hostname,,,
+908,demon.4irc.com,hostname,,,
+909,lehnjb.epac.to,hostname,,,
+910,mailru.25u.com,hostname,,,
+911,gjjb.flnet.org,hostname,,,
+912,sorry.ns2.name,hostname,,,
+913,uudog.4pu.com,hostname,,,
+914,ad94a29538ee89cd4eb50f7786ae3392,FileHash-MD5,,,
+915,03f789b0b8c40e4d813ec626f32cae7c,FileHash-MD5,,,
+916,eb7f32f9fc3aeb26d7e867a263d3d325,FileHash-MD5,,,
+917,b5f2cc8e8580a44a6aefc08f9776516a,FileHash-MD5,,,
+918,0ef2259ee73ab6c8fbb195f0b686642c,FileHash-MD5,,,
+919,6cffa20c14e4b6309f867f253c546fd2,FileHash-MD5,,,
+920,a5e144523b490722b283c70775688732,FileHash-MD5,,,
+921,cfbc6a5407d465a125cbd52a97bd9eff,FileHash-MD5,,,
+922,01c694c4ce68254edae3491c8245f839,FileHash-MD5,,,
+923,1c15767a091e32c3163390668eae8eab,FileHash-MD5,,,
+924,f38e4bf41df736b4785f15513b3e660d,FileHash-MD5,,,
+925,45b8d83f7f583156fa923583acf16fe9,FileHash-MD5,,,
+926,fd4b54bb92dd5c8cd056da618894816a,FileHash-MD5,,,
+927,6d3c6d452cd013de459351eade91d878,FileHash-MD5,,,
+928,c330b6aa705b60e5bec414299b387fe1,FileHash-MD5,,,
+929,24a35bf10cb091eae0ab56486ff3453f,FileHash-MD5,,,
+930,f870a5c2360932a35aa76568a07f9c16,FileHash-MD5,,,
+931,3515daf08a5daa104a8be3169d64bef2,FileHash-MD5,,,
+932,28395195dc75ac41e9d42f25473703f5,FileHash-MD5,,,
+933,d6365ce1f71a8dda9e485427c8a3d680,FileHash-MD5,,,
+934,7fa1df91016374d4b1bfb157716b2196,FileHash-MD5,,,
+935,eea30d5a1a83a396183d8f1d451b3b13,FileHash-MD5,,,
+936,3c976017a568920f27e06023781718c8,FileHash-MD5,,,
+937,66984d9371636067e9ea6ae327e2427e,FileHash-MD5,,,
